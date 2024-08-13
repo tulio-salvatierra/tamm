@@ -5,7 +5,7 @@ function Header() {
   return (
     <div className="bg-white p-4 flex justify-between text-mainBlue align-middle">
       <img src={Logo} className="p-2" />
-      <nav className="flex p-4 w-1/2 text-right justify-end font-extrabold text-lg">
+      <nav className="flex p-4 w-1/2 text-right justify-end font-extrabold text-lg items-center">
         <a href="/" className="mr-4">
           Home
         </a>
@@ -18,7 +18,9 @@ function Header() {
         <a href="/" className="mr-4">
           Contact
         </a>
-        <Button className="p-4 ">Book now!</Button>
+        <Button className="p-4 bg-lightGreen text-black justify-self-center ">
+          Book now!
+        </Button>
       </nav>
     </div>
   );
