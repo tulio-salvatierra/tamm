@@ -12,11 +12,11 @@ function App() {
               <h1 className="text-[9rem] font-bold mb-6 text-lightBlue -space-x-3.5 tracking-tighter leading-none">
                 Keep your home sparkling clean{" "}
               </h1>
-              <p className="text-2xl w-75 pt-4 text-lightGreen font-bold">
+              <p className="text-4xl w-75 pt-4 text-lightGreen ">
                 With TAMM cleaning services! We are a team of professionals who
                 are passionate about helping you achieve your goals.
               </p>
-              <button className="bg-lightGreen text-black text-1xl p-3 rounded-lg mt-4">
+              <button className="bg-mainBlue text-white text-1xl p-3 rounded-lg mt-4">
                 Book now!
               </button>
             </div>
