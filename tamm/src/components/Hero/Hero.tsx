@@ -1,3 +1,5 @@
+import yellow from "./../../assets/tamm-hero.png";
+
 function Hero() {
   return (
     <section className="bg-mainBlue text-white h-50  bg-cover bg-no-repeat h-screen place-content-center">
@@ -15,6 +17,13 @@ function Hero() {
               Book now!
             </button>
           </p>
+        </div>
+        <div className="place-content-center flex-wrap">
+          <img
+            src={yellow}
+            alt="cleaning"
+            className="w-auto h-50 rounded-2xl"
+          />
         </div>
       </div>
     </section>
