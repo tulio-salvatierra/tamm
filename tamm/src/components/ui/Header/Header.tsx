@@ -1,15 +1,5 @@
 import { useState } from "react";
 import { Button } from "./../button";
-import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerDescription,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "./../drawer";
 import Logo from "./../../../assets/FrameTAMM logo.svg";
 import Broom from "./../../../assets/broom.svg";
 
@@ -19,22 +9,6 @@ function Header() {
 
   return (
     <header className="bg-white p-4 flex justify-between text-mainBlue ">
-      <Drawer>
-        <DrawerTrigger>Open</DrawerTrigger>
-        <DrawerContent>
-          <DrawerHeader>
-            <DrawerTitle>Are you absolutely sure?</DrawerTitle>
-            <DrawerDescription>This action cannot be undone.</DrawerDescription>
-          </DrawerHeader>
-          <DrawerFooter>
-            <Button>Submit</Button>
-            <DrawerClose>
-              <Button variant="outline">Cancel</Button>
-            </DrawerClose>
-          </DrawerFooter>
-        </DrawerContent>
-      </Drawer>
-
       <img src={Logo} className="p-2" />
 
       <div className="flex w-auto ml-auto justify-end">
