@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Button } from "./../button";
-import Logo from "./../../../assets/FrameTAMM logo.svg";
-import Broom from "./../../../assets/broom.svg";
+import { Button } from "../ui/button";
+import Logo from "./../../assets/TAMM_logo.svg";
+import Broom from "./../../assets/broom.svg";
 
 function Header() {
   const [showMenu, setShowMenu] = useState(false);
