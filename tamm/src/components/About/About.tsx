@@ -1,53 +1,62 @@
 import Check from "./../../assets/check.svg";
-import Hero from "./../../assets/tamm-hero.png";
+import BlueClean from "./../../assets/blue-clean.jpeg";
 
 function About() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-mainBlue">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-mainBlue" id="about">
       <div className="container px-4 md:px-6">
         <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
           <div className="space-y-4">
             <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm text-mainBlue">
               About Us
             </div>
-            <h2 className="text-3xl font-bold tracking-tighter text-lightBlue sm:text-5xl">
+            <h1 className="text-6xl font-bold tracking-tighter text-lightBlue sm:text-5xl">
               Cleaning Services You Can Trust
-            </h2>
-            <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              At Sparkling Clean, we've been providing top-notch cleaning
-              services to homes and businesses in the area for over 15 years.
-              Our team of experienced and dedicated professionals takes pride in
-              delivering exceptional results every time.
+            </h1>
+            <p className="max-w-[600px]  md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              TAMM Cleaning Services was founded on the principles of quality,
+              reliability, and customer care. Our family-owned business in
+              Chicago has built a reputation for excellence in cleaning
+              services, ensuring each client receives personalized attention and
+              outstanding results. We use eco-friendly products to protect your
+              home, office, and the environment.
             </p>
-            <div className="grid gap-4 text-black">
-              <div className="flex items-center gap-2">
-                <h4 className="text-lg font-medium">
-                  <img src={Check} />
+            <div className="grid grid-cols-2 gap-4 text-left">
+              <div className="space-y-2 bg-lightGreen text-white p-4 rounded-lg">
+                <img src={Check} alt="about-icon" />
+                <h1 className="text-2xl font-medium text-left">
                   Residential Cleaning
-                </h4>
+                </h1>
+                <ul className="list-none text-left pl-4 ">
+                  <li>Regular Cleaning</li>
+                  <li>Deep Cleaning</li>
+                  <li>Move-In/Move-Out Cleaning</li>
+                </ul>
               </div>
-              <div className="flex flex-row items-center gap-2">
-                <h4 className="text-lg font-medium">
-                  <img src={Check} />
-                  Commercial Cleaning
-                </h4>
+              <div className="space-y-2 bg-lightGreen text-white p-4 rounded-lg">
+                <img src={Check} alt="about-icon" />
+                <h1 className="text-2xl font-medium ">Commercial Cleaning</h1>
+                <ul className="list-none text-left pl-4">
+                  <li>Office Cleaning</li>
+                  <li>Restaurant Cleaning</li>
+                  <li>Retail Cleaning</li>
+                </ul>
               </div>
-              <div className="flex items-center gap-2">
-                <h4 className="text-lg font-medium">
-                  <img src={Check} />
-                  Carpet Cleaning
-                </h4>
-              </div>
-              <div className="flex items-center gap-2">
-                <h4 className="text-lg font-medium">
-                  <img src={Check} />
-                  Window Washing
-                </h4>
+              <div className="space-y-2 bg-lightGreen text-white p-4 rounded-lg">
+                <img src={Check} alt="about-icon" />
+                <h2 className="text-2xl flex font-medium">
+                  Specialized Services:
+                </h2>
+                <ul className="list-none text-left pl-4">
+                  <li>Carpet Cleaning</li>
+                  <li>Window Washing</li>
+                  <li>Post-Construction Cleaning</li>
+                </ul>
               </div>
             </div>
           </div>
           <img
-            src={Hero}
+            src={BlueClean}
             width="550"
             height="310"
             alt="Cleaning Service"
