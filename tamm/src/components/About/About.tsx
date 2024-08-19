@@ -1,9 +1,12 @@
 import Check from "./../../assets/check.svg";
-import BlueClean from "./../../assets/blue-clean.jpeg";
+import BlueClean from "./../../assets/mary.jpg";
 
 function About() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-mainBlue" id="about">
+    <section
+      className="w-full py-12 md:py-24 lg:py-32 bg-white magic magicpattern"
+      id="about"
+    >
       <div className="container px-4 md:px-6">
         <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
           <div className="space-y-4">
@@ -13,7 +16,7 @@ function About() {
             <h1 className="text-6xl font-bold tracking-tighter text-lightBlue sm:text-5xl">
               Cleaning Services You Can Trust
             </h1>
-            <p className="max-w-[600px]  md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <p className="max-w-[600px] text-lightBlue text-left  md:text-xl lg:text-base/relaxed xl:text-xl/relaxed">
               TAMM Cleaning Services was founded on the principles of quality,
               reliability, and customer care. Our family-owned business in
               Chicago has built a reputation for excellence in cleaning
@@ -22,7 +25,7 @@ function About() {
               home, office, and the environment.
             </p>
             <div className="grid grid-cols-2 gap-4 text-left">
-              <div className="space-y-2 bg-lightGreen text-white p-4 rounded-lg">
+              <div className="space-y-2 bg-gradient-to-tr from-lime-300 to-emerald-400 text-white p-4 rounded-lg">
                 <img src={Check} alt="about-icon" />
                 <h1 className="text-2xl font-medium text-left">
                   Residential Cleaning
@@ -33,7 +36,7 @@ function About() {
                   <li>Move-In/Move-Out Cleaning</li>
                 </ul>
               </div>
-              <div className="space-y-2 bg-lightGreen text-white p-4 rounded-lg">
+              <div className="space-y-2 bg-gradient-to-tr from-lime-300 to-emerald-400 text-white p-4 rounded-lg">
                 <img src={Check} alt="about-icon" />
                 <h1 className="text-2xl font-medium ">Commercial Cleaning</h1>
                 <ul className="list-none text-left pl-4">
@@ -42,7 +45,7 @@ function About() {
                   <li>Retail Cleaning</li>
                 </ul>
               </div>
-              <div className="space-y-2 bg-lightGreen text-white p-4 rounded-lg">
+              <div className="space-y-2 bg-gradient-to-tr from-lime-300 to-emerald-400 text-white p-4 rounded-lg">
                 <img src={Check} alt="about-icon" />
                 <h2 className="text-2xl flex font-medium">
                   Specialized Services:
