@@ -8,7 +8,7 @@ import Why from "./components/Why";
 function App() {
   return (
     <>
-      <div className="App">
+      <div className="App grid-container">
         <Header />
         <Hero />
         <About />

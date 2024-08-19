@@ -5,6 +5,14 @@
   color: #fff;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 column */
+  grid-template-rows: auto; /* Automatically adjust row heights */
+  gap: 20px; /* Adds spacing between the sections */
+  padding: 20px; /* Adds padding around the grid */
+}
+
 .magicpattern {
   overflow: svg;
   width: 100%;
