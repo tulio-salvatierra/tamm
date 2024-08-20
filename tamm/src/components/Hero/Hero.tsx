@@ -10,9 +10,9 @@ function Hero() {
             <h1 className="text-[6rem] md:text-[10rem] font-bold mb-6 bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent tracking-tighter leading-none md:leading-[8rem]">
               Keep your home sparkling clean{" "}
             </h1>
-            <p className="text-6xl w-75 pt-8 text-white p-4 rounded-2xl ">
-              with TAMM cleaning services will help you experience your home
-              like never before!
+            <p className="text-4xl w-75 pt-8 text-white p-4 rounded-2xl ">
+              TAMM cleaning services will have you experience your home like
+              never before!
               <br />
               <br />
               <Button className=" text-white text-2xl p-3 rounded-lg mt-4 w-full hover:bg-lightBlue  ">

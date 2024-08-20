@@ -13,10 +13,10 @@ function About() {
             <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm text-mainBlue">
               About Us
             </div>
-            <h1 className="text-6xl font-bold tracking-tighter text-lightBlue sm:text-5xl">
+            <h1 className="text-[2rem] bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter sm:text-8xl">
               Cleaning Services You Can Trust
             </h1>
-            <p className="max-w-[600px] text-lightBlue text-left  md:text-xl lg:text-base/relaxed xl:text-xl/relaxed">
+            <p className="w-100 text-slate-400 bg-opacity-10 text-left  md:text-xl lg:text-base/relaxed xl:text-xl/relaxed bg-muted rounded-2xl p-4 border-teal-100">
               TAMM Cleaning Services was founded on the principles of quality,
               reliability, and customer care. Our family-owned business in
               Chicago has built a reputation for excellence in cleaning
@@ -30,7 +30,7 @@ function About() {
                 <h1 className="text-2xl font-medium text-left">
                   Residential Cleaning
                 </h1>
-                <ul className="list-none text-left pl-4 ">
+                <ul className=" text-slate-400 list-none text-left pl-4 ">
                   <li>Regular Cleaning</li>
                   <li>Deep Cleaning</li>
                   <li>Move-In/Move-Out Cleaning</li>
@@ -39,7 +39,7 @@ function About() {
               <div className="space-y-2 bg-gradient-to-tr from-lime-300 to-emerald-400 text-white p-4 rounded-lg">
                 <img src={Check} alt="about-icon" />
                 <h1 className="text-2xl font-medium ">Commercial Cleaning</h1>
-                <ul className="list-none text-left pl-4">
+                <ul className="text-slate-400 list-none text-left pl-4">
                   <li>Office Cleaning</li>
                   <li>Restaurant Cleaning</li>
                   <li>Retail Cleaning</li>
@@ -50,7 +50,7 @@ function About() {
                 <h2 className="text-2xl flex font-medium">
                   Specialized Services:
                 </h2>
-                <ul className="list-none text-left pl-4">
+                <ul className="text-slate-400 list-none text-left pl-4">
                   <li>Carpet Cleaning</li>
                   <li>Window Washing</li>
                   <li>Post-Construction Cleaning</li>
