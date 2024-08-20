@@ -10,7 +10,7 @@ function About() {
       <div className="container px-4 md:px-6">
         <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
           <div className="space-y-4">
-            <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm text-mainBlue">
+            <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm text-mainBlue font-black">
               About Us
             </div>
             <h1 className="text-[2rem] bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter sm:text-8xl">

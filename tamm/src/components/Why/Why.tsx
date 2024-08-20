@@ -12,45 +12,53 @@ function Why() {
               Why Choose Us?
             </h1>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              We are committed to providing the highest quality cleaning
-              services with unparalleled customer satisfaction.
+              <a className="text-bolder text-[2rem]">Simple!</a> We are
+              committed to providing the highest quality cleaning services with
+              unparalleled customer satisfaction.
             </p>
           </div>
           <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12">
-            <div className="grid gap-1">
+            <div className="grid gap-1 bg-muted p-4 rounded-xl">
               <div className="flex flex-col items-center gap-2">
-                <img src={Bucket} alt="bucket" />
+                <img src={Bucket} className="h-[3rem]" alt="bucket" />
                 <h3 className="text-lg font-bold bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack ">
-                  Award-Winning
+                  Experienced and Reliable Cleaning Professionals
                 </h3>
               </div>
-              <p className="text-muted-foreground">
-                Our team has been recognized for their exceptional cleaning
-                services, winning multiple industry awards.
+              <p className="text-muted-foreground text-left p-4">
+                Our team at TAMM Cleaning Services is highly trained and
+                experienced in residential and commercial cleaning. We deliver
+                reliable, detail-oriented service every time, ensuring your
+                space is always spotless. Choose us for a trusted and
+                professional cleaning experience in Chicago.
               </p>
             </div>
-            <div className="grid gap-1">
+            <div className="grid gap-1 bg-muted p-4 rounded-xl md:mt-[-4rem]">
               <div className="flex flex-col items-center gap-2">
-                <img src={Bottle} alt="bottle" />
+                <img src={Bottle} className="h-[4rem]" alt="bottle" />
                 <h3 className="text-lg font-bold bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack ">
-                  Satisfaction Guaranteed
+                  Eco-Friendly Cleaning Products and Practices
                 </h3>
               </div>
-              <p className="text-muted-foreground">
-                We stand behind our work and offer a 100% satisfaction
-                guarantee. If you're not happy, we'll make it right.
+              <p className="text-muted-foreground text-left p-4">
+                We use eco-friendly cleaning products that are safe for your
+                family, pets, and the environment. Our green practices ensure a
+                clean space while supporting a healthier planet. Enjoy effective
+                cleaning that’s good for both you and the Earth.
               </p>
             </div>
-            <div className="grid gap-1">
+            <div className="grid gap-1 bg-muted p-4 rounded-xl h-[388px]">
               <div className="flex flex-col items-center gap-2">
-                <img src={Hanger} alt="hanger" />
+                <img src={Hanger} className="h-[4rem]" alt="hanger" />
                 <h3 className="text-lg font-bold bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack ">
-                  Eco-Friendly Cleaning
+                  Customized Cleaning Plans to Meet Your Specific Needs
                 </h3>
               </div>
               <p className="text-muted-foreground">
-                We use environmentally-friendly cleaning products to ensure a
-                safe and healthy home for you and your family.
+                TAMM Cleaning Services offers customized cleaning plans tailored
+                to your specific needs. Whether it’s regular home cleaning or a
+                one-time deep clean, we’ll create a schedule that works for you.
+                Flexibility and quality are our priorities.
               </p>
             </div>
           </div>
