@@ -8,7 +8,7 @@ function Header() {
   const toggleMenu = () => setShowMenu(!showMenu);
 
   return (
-    <header className="bg-white p-4 flex justify-between text-mainBlue ">
+    <header className="bg-white p-4 flex justify-between text-mainBlue shadow-xl  ">
       <img src={Logo} className="p-2" alt="TAMM Logo" />
 
       <div className="flex w-auto ml-auto justify-end">

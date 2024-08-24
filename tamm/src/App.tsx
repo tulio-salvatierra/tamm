@@ -11,10 +11,12 @@ function App() {
     <>
       <div className="App grid-container">
         <Header />
-        <Hero />
-        <About />
-        <Why />
-        <Contact />
+        <div className="main">
+          <Hero />
+          <About />
+          <Why />
+          <Contact />
+        </div>
         <Footer />
       </div>
     </>
