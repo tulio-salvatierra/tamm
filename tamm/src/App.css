@@ -7,9 +7,10 @@
 
 .grid-container {
   display: grid;
+  min-height: 100vh;
   grid-template-columns: 1fr; /* 1 column */
   grid-template-rows: auto; /* Automatically adjust row heights */
-  gap: 20px; /* Adds spacing between the sections */
+  gap: 0; /* Adds spacing between the sections */
   padding: 0; /* Adds padding around the grid */
 }
 
