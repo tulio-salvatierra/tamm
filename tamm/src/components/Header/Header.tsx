@@ -14,19 +14,31 @@ function Header() {
       <div className="flex w-auto ml-auto justify-end">
         {/* Desktop Menu */}
         <nav className="hidden md:flex p-4 text-right justify-end font-extrabold text-lg items-center">
-          <Button className="p-4 bg-lightGreen text-mainBlue text-lg font-extrabold justify-self-end self-center ml-auto mx-20 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-400 duration-100">
+          <Button className="p-4 bg-lightGreen text-mainBlue text-lg font-extrabold justify-self-end self-center ml-auto mx-20 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-150 hover:bg-indigo-100 duration-100">
             Book now!
           </Button>
-          <a href="/" className="mr-4 ">
+          <a
+            href="/"
+            className="mr-4 relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+          >
             Home
           </a>
-          <a href="/services" className="mr-4">
+          <a
+            href="/services"
+            className="mr-4 relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+          >
             Services
           </a>
-          <a href="#about" className="mr-4">
+          <a
+            href="#about"
+            className="mr-4 relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+          >
             About
           </a>
-          <a href="#contact" className="mr-4">
+          <a
+            href="#contact"
+            className="mr-4 relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+          >
             Contact
           </a>
         </nav>

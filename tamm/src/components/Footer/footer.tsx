@@ -16,24 +16,27 @@ export default function Footer() {
         </div>
         <div className="grid gap-2">
           <h4 className="text-lg font-semibold">Quick Links</h4>
-          <a href="/" className="text-muted-foreground hover:text-foreground">
+          <a
+            href="/"
+            className="justify-center text-mainBlue relative text-2xl block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+          >
             Home
           </a>
           <a
             href="#about"
-            className="text-muted-foreground hover:text-foreground"
+            className="justify-center text-mainBlue relative text-2xl block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
           >
             About
           </a>
           <a
             href="/services"
-            className="text-muted-foreground hover:text-foreground"
+            className="justify-center text-mainBlue relative text-2xl block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
           >
             Services
           </a>
           <a
             href="#contact"
-            className="text-muted-foreground hover:text-foreground"
+            className="justify-center text-mainBlue relative text-2xl block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
           >
             Contact
           </a>

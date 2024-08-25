@@ -25,10 +25,10 @@
   content: url("./assets/sparkle.svg"); /* Base64 encoded SVG example */
   position: absolute;
   right: 160px; /* Adjust this as per your design */
-  top: 70%;
+  top: 50%;
   transform: translateY(-50%);
-  width: 4px;
-  height: 4px;
+  width: 40px;
+  height: 40px;
 }
 
 @media (max-width: 768px) {
@@ -37,7 +37,7 @@
   }
 }
 .headline::after {
-  right: 120px;
+  right: 220px;
   top: 70%;
 }
 
