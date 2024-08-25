@@ -4,25 +4,30 @@ import { Button } from "./../ui/button";
 function Hero() {
   return (
     <section className="bg-white" id="home">
-      <div className="container-xxl bg-inherit m-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 gap-4">
-          <div className="place-content-center text-left justify-evenly p- md:p-9">
-            <h1 className="headline">Keep your home sparkling clean </h1>
-            <p className="text-4xl w-100 pt-8 text-slate-400 p-4 rounded-2xl ">
-              TAMM cleaning services will have you experience your home like
-              <a className="text-mainBlue">never before!</a>
+      <div className="container-xxl bg-inherit py-12 md:py-24 lg:py-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center">
+          {/* Left Content */}
+          <div className="space-y-6 px-4 md:px-6 text-left z-10">
+            <h1 className="text-[2rem] bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter sm:text-8xl">
+              Keep your home sparkling clean
+            </h1>
+            <p className="bg-transparent text-4xl text-slate-400 max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed p-4 rounded-2xl">
+              TAMM cleaning services will have you experience your home like{" "}
+              <a className="text-mainBlue text-[2rem]">never before!</a>
               <br />
               <br />
-              <Button className=" text-mainBlue font-extrabold text-2xl p-6 rounded-lg mt-4 w-full hover:bg-lightBlue  ">
+              <Button className="text-mainBlue font-extrabold text-2xl p-6 rounded-lg mt-4 w-full hover:bg-lightBlue">
                 Book now!
               </Button>
             </p>
           </div>
-          <div className="place-content-center flex-wrap">
+
+          {/* Right Image */}
+          <div className="flex items-center justify-center">
             <img
               src={yellow}
               alt="cleaning"
-              className="w-auto h-[650px] rounded-2xl cover"
+              className="w-full max-w-[500px] md:max-w-none md:w-auto h-auto  object-cover"
             />
           </div>
         </div>
