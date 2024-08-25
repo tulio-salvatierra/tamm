@@ -12,7 +12,7 @@ function Why() {
               Why Choose Us?
             </h1>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              <a className="text-black  text-[2rem]">Simple!</a> We are
+              <a className="text-black  text-[4rem]">Simple!</a> We are
               committed to providing the highest quality cleaning services with
               unparalleled customer satisfaction.
             </p>

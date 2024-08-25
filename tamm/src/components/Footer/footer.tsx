@@ -2,7 +2,7 @@ import Logo from "./../../assets/TAMM_logo.svg";
 
 export default function Footer() {
   return (
-    <footer className="bg-background text-foreground py-12 border-t">
+    <footer className="bg-muted text-foreground py-12 border-t">
       <div className="container max-w-5xl px-4 md:px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="flex flex-col items-start gap-4">
           <a href="#" className="flex items-center gap-2">
@@ -45,7 +45,7 @@ export default function Footer() {
           </p>
           <p className="text-muted-foreground">Phone: (773) 919-9161</p>
           <p className="text-muted-foreground">
-            Email: info@sparklingclean.com
+            Email: tammcleaningservices@gmail.com
           </p>
         </div>
       </div>
