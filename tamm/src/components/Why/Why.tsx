@@ -12,7 +12,7 @@ function Why() {
               Why Choose Us?
             </h1>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              <a className="text-bolder text-[2rem]">Simple!</a> We are
+              <a className="text-black  text-[2rem]">Simple!</a> We are
               committed to providing the highest quality cleaning services with
               unparalleled customer satisfaction.
             </p>
@@ -33,10 +33,10 @@ function Why() {
                 professional cleaning experience in Chicago.
               </p>
             </div>
-            <div className="grid gap-1 bg-muted p-4 rounded-xl md:mt-[-4rem]">
+            <div className="grid gap-1 bg-muted p-4 rounded-xl">
               <div className="flex flex-col items-center gap-2">
                 <img src={Bottle} className="h-[4rem]" alt="bottle" />
-                <h3 className="text-lg font-bold bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack ">
+                <h3 className="text-lg font-bold bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack">
                   Eco-Friendly Cleaning Products and Practices
                 </h3>
               </div>
