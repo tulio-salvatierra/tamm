@@ -27,7 +27,7 @@ function Hero() {
             <img
               src={yellow}
               alt="cleaning"
-              className="w-full max-w-[500px] md:max-w-none md:w-auto h-auto  object-cover"
+              className="w-full max-w-[500px] md:max-w-none md:w-80% h-auto  object-cover"
             />
           </div>
         </div>

@@ -11,10 +11,10 @@ function Why() {
             <h1 className="text-[2rem] bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter sm:text-8xl">
               Why Choose Us?
             </h1>
+            <a className="text-lightGreen  text-[4rem]">Simple!</a>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              <a className="text-black  text-[4rem]">Simple!</a> We are
-              committed to providing the highest quality cleaning services with
-              unparalleled customer satisfaction.
+              We are committed to providing the highest quality cleaning
+              services with unparalleled customer satisfaction.
             </p>
           </div>
           <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12">
@@ -54,7 +54,7 @@ function Why() {
                   Customized Cleaning Plans to Meet Your Specific Needs
                 </h3>
               </div>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground text-left">
                 TAMM Cleaning Services offers customized cleaning plans tailored
                 to your specific needs. Whether it’s regular home cleaning or a
                 one-time deep clean, we’ll create a schedule that works for you.
