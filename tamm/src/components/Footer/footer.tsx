@@ -16,7 +16,7 @@ export default function Footer() {
         </div>
         <div className="grid gap-2">
           <h4 className="text-lg font-semibold">Quick Links</h4>
-          <a href="#" className="text-muted-foreground hover:text-foreground">
+          <a href="/" className="text-muted-foreground hover:text-foreground">
             Home
           </a>
           <a
@@ -25,10 +25,16 @@ export default function Footer() {
           >
             About
           </a>
-          <a href="#" className="text-muted-foreground hover:text-foreground">
+          <a
+            href="/services"
+            className="text-muted-foreground hover:text-foreground"
+          >
             Services
           </a>
-          <a href="#" className="text-muted-foreground hover:text-foreground">
+          <a
+            href="#contact"
+            className="text-muted-foreground hover:text-foreground"
+          >
             Contact
           </a>
         </div>

@@ -5,7 +5,7 @@ function Hero() {
   return (
     <section
       className="bg-gradient-to-l from-blue-500 to-blue-600 text-white  bg-cover bg-no-repeat h-100 w-screen md:p-8 place-content-center"
-      id="hero"
+      id="home"
     >
       <div className="container-xxl bg-inherit m-4">
         <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 gap-4">

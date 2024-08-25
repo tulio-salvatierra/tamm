@@ -20,13 +20,13 @@ function Header() {
           <a href="/" className="mr-4 ">
             Home
           </a>
-          <a href="/" className="mr-4">
+          <a href="/services" className="mr-4">
             Services
           </a>
-          <a href="/" className="mr-4">
+          <a href="#about" className="mr-4">
             About
           </a>
-          <a href="/" className="mr-4">
+          <a href="#contact" className="mr-4">
             Contact
           </a>
         </nav>

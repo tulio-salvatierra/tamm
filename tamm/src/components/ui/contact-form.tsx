@@ -5,7 +5,10 @@ import { Button } from "@/components/ui/button";
 
 export function ContactForm() {
   return (
-    <div className="w-full max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+    <section
+      className="w-full max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20"
+      id="contact"
+    >
       <div className="space-y-6">
         <div className="text-center">
           <h2 className="text-[2rem] bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter sm:text-8xl">
@@ -85,6 +88,6 @@ export function ContactForm() {
           </div>
         </form>
       </div>
-    </div>
+    </section>
   );
 }
