@@ -7,7 +7,39 @@
   text-align: center;
   color: #fff;
 }
-/*  */
+
+.headline {
+  font-size: 6rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to left, #e0e0e0, #a4d4a0);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  display: inline-block;
+  position: relative;
+}
+
+.headline::after {
+  content: url("./assets/sparkle.svg"); /* Base64 encoded SVG example */
+  position: absolute;
+  right: 160px; /* Adjust this as per your design */
+  top: 70%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+}
+
+@media (max-width: 768px) {
+  .headline {
+    font-size: 4rem;
+  }
+}
+.headline::after {
+  right: 120px;
+  top: 70%;
+}
 
 .magicpattern {
   overflow: svg;
