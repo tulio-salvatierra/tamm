@@ -27,7 +27,7 @@ function Hero() {
             <img
               src={yellow}
               alt="cleaning"
-              className="w-auto h-25 rounded-2xl cover"
+              className="w-auto h-[650px] rounded-2xl cover"
             />
           </div>
         </div>
