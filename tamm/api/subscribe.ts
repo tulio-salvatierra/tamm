@@ -1,6 +1,7 @@
 import { VercelRequest, VercelResponse } from "@vercel/node";
 import { MongoClient } from "mongodb";
 
+// Cache the MongoDB client
 let cachedClient: MongoClient | null = null;
 
 // Function to connect to MongoDB
@@ -27,7 +28,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
 
     try {
-      const client = await connectToDatabase(process.env.MONGODB_URI!);
+      const client = await connectToDatabase(import.meta.env.MONGODB_URI!);
       const db = client.db("emailList");
       const collection = db.collection("subscribedEmails");
 
