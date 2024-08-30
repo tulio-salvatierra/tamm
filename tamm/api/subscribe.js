@@ -1,11 +1,8 @@
-import { VercelRequest, VercelResponse } from "@vercel/node";
-import { MongoClient } from "mongodb";
+const { MongoClient } = require("mongodb");
 
-// Cache the MongoDB client
-let cachedClient: MongoClient | null = null;
+let cachedClient = null;
 
-// Function to connect to MongoDB
-async function connectToDatabase(uri: string) {
+async function connectToDatabase(uri) {
   if (cachedClient) {
     return cachedClient;
   }
@@ -18,21 +15,19 @@ async function connectToDatabase(uri: string) {
   return client;
 }
 
-export default async function handler(req: VercelRequest, res: VercelResponse) {
+module.exports = async function handler(req, res) {
   if (req.method === "POST") {
     const { email } = req.body;
 
-    // Validate the email
     if (!email || !/\S+@\S+\.\S+/.test(email)) {
       return res.status(400).json({ message: "Invalid email" });
     }
 
     try {
-      const client = await connectToDatabase(import.meta.env.MONGODB_URI!);
+      const client = await connectToDatabase(process.env.MONGODB_URI);
       const db = client.db("emailList");
       const collection = db.collection("subscribedEmails");
 
-      // Insert the email into the database
       await collection.insertOne({
         email: email,
         date: new Date(),
@@ -49,4 +44,4 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       .status(405)
       .json({ message: `Method ${req.method} not allowed` });
   }
-}
+};
