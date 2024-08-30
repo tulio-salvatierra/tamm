@@ -18,7 +18,9 @@ function App() {
         <CTA />
         <About />
         <Why />
-        <Contact />
+        <div id="contact">
+          <Contact />
+        </div>
         <Footer />
       </div>
     </>

@@ -24,7 +24,7 @@ export function ContactForm() {
             <div className="space-y-2">
               <Label
                 htmlFor="name"
-                className="text-[2rem] bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter sm:text-4xl"
+                className="text-[2rem] text-mainBlue sm:text-4xl"
               >
                 Name
               </Label>
@@ -38,7 +38,7 @@ export function ContactForm() {
             <div className="space-y-2">
               <Label
                 htmlFor="email"
-                className="text-[2rem] bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter sm:text-4xl"
+                className="text-[2rem] text-mainBlue sm:text-4xl"
               >
                 Email
               </Label>
@@ -53,7 +53,7 @@ export function ContactForm() {
           <div className="space-y-2">
             <Label
               htmlFor="phone"
-              className="text-[2rem] bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter sm:text-4xl"
+              className="text-[2rem] text-mainBlue sm:text-4xl"
             >
               Phone
             </Label>
@@ -67,7 +67,7 @@ export function ContactForm() {
           <div className="space-y-2">
             <Label
               htmlFor="message"
-              className="text-[2rem] bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter sm:text-4xl"
+              className="text-[2rem] text-mainBlue sm:text-4xl"
             >
               Message
             </Label>

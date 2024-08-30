@@ -3,6 +3,12 @@ import { Button } from "./../ui/button";
 import HeroSvg from "./../../assets/blob-scene-haikei.svg";
 
 function Hero() {
+  const scrollToForm = () => {
+    const formSection = document.getElementById("contact");
+    if (formSection) {
+      formSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section
       id="home"
@@ -24,7 +30,10 @@ function Hero() {
               <a className="text-mainBlue text-[2rem]">never before!</a>
               <br />
               <br />
-              <Button className="text-mainBlue font-extrabold text-2xl p-6 rounded-lg mt-4 w-full hover:bg-lightBlue">
+              <Button
+                className="text-mainBlue font-extrabold text-2xl p-6 rounded-lg mt-4 w-full hover:bg-lightBlue"
+                onClick={scrollToForm}
+              >
                 Book now!
               </Button>
             </p>

@@ -7,6 +7,14 @@ function Header() {
   const [showMenu, setShowMenu] = useState(false);
   const toggleMenu = () => setShowMenu(!showMenu);
 
+  const scrollToFormHeader = () => {
+    const formSection = document.getElementById("contact");
+    if (formSection) {
+      formSection.scrollIntoView({ behavior: "smooth" });
+    }
+    setShowMenu(false);
+  };
+
   return (
     <header className="bg-white p-4 flex justify-between text-mainBlue shadow-xl  ">
       <img src={Logo} className="p-2" alt="TAMM Logo" />
@@ -14,7 +22,10 @@ function Header() {
       <div className="flex w-auto ml-auto justify-end">
         {/* Desktop Menu */}
         <nav className="hidden md:flex p-4 text-right justify-end font-extrabold text-lg items-center">
-          <Button className="p-4 bg-lightGreen text-mainBlue text-lg font-extrabold justify-self-end self-center ml-auto mx-20 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-150 hover:bg-indigo-100 duration-100">
+          <Button
+            className="p-4 bg-lightGreen text-mainBlue text-lg font-extrabold justify-self-end self-center ml-auto mx-20 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-150 hover:bg-indigo-100 duration-100"
+            onClick={scrollToFormHeader}
+          >
             Book now!
           </Button>
           <a
@@ -52,7 +63,10 @@ function Header() {
       {/* Mobile Menu */}
       {showMenu && (
         <nav className="md:hidden fixed top-0 left-0 w-full h-full bg-white z-50 flex flex-col items-center p-4">
-          <Button className="p-4 bg-lightGreen text-mainBlue text-lg font-extrabold mb-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-400 duration-300">
+          <Button
+            className="p-4 bg-lightGreen text-mainBlue text-lg font-extrabold mb-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-400 duration-300"
+            onClick={scrollToFormHeader}
+          >
             Book now!
           </Button>
           <a href="/" className="block mb-4 text-xl">

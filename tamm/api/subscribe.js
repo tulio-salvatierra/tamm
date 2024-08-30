@@ -24,7 +24,7 @@ export default async function handler(req, res) {
 
   const { email } = req.body;
 
-  if (!email || !/\S+@\S+\.\S+/.test(email)) {
+  if (!email || !/.+@.+\..+/.test(email)) {
     return res.status(400).json({ message: "Invalid email" });
   }
 
