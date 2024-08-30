@@ -9,28 +9,33 @@ export default function CTA() {
 
     try {
       const response = await fetch("/api/subscribe", {
-        method: "POST",
+        method: "POST", // POST request to send data to the server
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email }), // Sending the email as a JSON object
       });
 
-      // Check if the response body exists before parsing
-      let data;
-      if (response.headers.get("content-length") !== "0") {
-        data = await response.json();
+      if (!response.ok) {
+        const errorBody = await response.text();
+        throw new Error(
+          `Network response was not ok. Status: ${response.status}, Body: ${errorBody}`
+        );
       }
 
-      if (response.ok) {
-        setMessage(data?.message || "Thank you for subscribing!");
-        setEmail(""); // Clear the input
+      const data = await response.json();
+      setMessage(data.message || "Thank you for subscribing!");
+      setEmail(""); // Clear the input field
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        console.error("Error:", error.message);
+        setMessage(
+          `There was a problem with your subscription. ${error.message}`
+        );
       } else {
-        setMessage(data?.message || "Something went wrong. Please try again.");
+        console.error("Unknown error:", error);
+        setMessage("An unknown error occurred.");
       }
-    } catch (error) {
-      console.error("Error:", error);
-      setMessage("There was a problem with your subscription.");
     }
   };
 

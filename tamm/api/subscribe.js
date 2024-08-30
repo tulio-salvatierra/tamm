@@ -1,7 +1,3 @@
-// Change from this (CommonJS syntax):
-// const { MongoClient } = require('mongodb');
-
-// To this (ES Modules syntax):
 import { MongoClient } from "mongodb";
 
 let cachedClient = null;
@@ -33,7 +29,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const client = await connectToDatabase(process.env.MONGODB_URI);
+    const client = await connectToDatabase(process.env.MONGODB_URI); // Accessing the environment variable directly
     const db = client.db("emailList");
     const collection = db.collection("subscribedEmails");
 
