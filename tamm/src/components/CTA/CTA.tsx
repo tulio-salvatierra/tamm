@@ -5,24 +5,28 @@ export default function CTA() {
   const [message, setMessage] = useState("");
 
   const handleSubmit = async (event: React.FormEvent) => {
-    event.preventDefault(); // Prevent default form submission (which would be GET)
+    event.preventDefault();
 
     try {
       const response = await fetch("/api/subscribe", {
-        method: "POST", // Ensure the method is POST
+        method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email }), // Send the email data
+        body: JSON.stringify({ email }),
       });
 
-      const data = await response.json();
+      // Check if the response body exists before parsing
+      let data;
+      if (response.headers.get("content-length") !== "0") {
+        data = await response.json();
+      }
 
       if (response.ok) {
-        setMessage(data.message || "Thank you for subscribing!");
+        setMessage(data?.message || "Thank you for subscribing!");
         setEmail(""); // Clear the input
       } else {
-        setMessage(data.message || "Something went wrong. Please try again.");
+        setMessage(data?.message || "Something went wrong. Please try again.");
       }
     } catch (error) {
       console.error("Error:", error);
