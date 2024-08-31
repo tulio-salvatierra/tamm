@@ -15,7 +15,6 @@ function App() {
           <Header />
         </div>
         <Hero />
-        <CTA />
         <About />
         <Why />
         <div id="contact">
