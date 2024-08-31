@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import emailjs from "@emailjs/browser";
 
 export function ContactForm() {
-  const [success, setSuccess] = useState(false);
+  const [, setSuccess] = useState(false);
   // Type the useRef hook to reference an HTMLFormElement
   const form = useRef<HTMLFormElement>(null);
 
