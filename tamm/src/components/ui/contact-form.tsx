@@ -1,9 +1,41 @@
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import { useRef, FormEvent, useState } from "react";
 import { Button } from "@/components/ui/button";
+import emailjs from "@emailjs/browser";
 
 export function ContactForm() {
+  const [success, setSuccess] = useState(false);
+  // Type the useRef hook to reference an HTMLFormElement
+  const form = useRef<HTMLFormElement>(null);
+
+  // Type the event as FormEvent<HTMLFormElement>
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (form.current) {
+      emailjs
+        .sendForm(
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+          form.current,
+          {
+            publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+          }
+        )
+        .then(
+          () => {
+            console.log("SUCCESS!");
+            setSuccess(true);
+            alert("Thank you for submitting, we'll get back to you shortly!");
+            form.current?.reset();
+          },
+          (error) => {
+            console.log("FAILED...", error.text);
+            setSuccess(false);
+          }
+        );
+    }
+  };
+
   return (
     <section
       className="w-full max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20"
@@ -19,63 +51,71 @@ export function ContactForm() {
             back to you as soon as possible.
           </p>
         </div>
-        <form className="space-y-6">
+        <form ref={form} onSubmit={sendEmail} className="space-y-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div className="space-y-2">
-              <Label
+              <label
                 htmlFor="name"
-                className="text-[2rem] text-mainBlue sm:text-4xl"
+                className="text-[2rem] text-mainBlue sm:text-3xl"
               >
                 Name
-              </Label>
-              <Input
+              </label>
+              <input
                 id="name"
+                name="user_name"
                 type="text"
                 placeholder="John Doe"
-                className="w-full border-none bg-muted px-4 py-3 text-primary-foreground placeholder:text-muted-foreground focus:ring-0"
+                className="w-full border-none bg-muted px-4 py-3 text-mainBlue placeholder:text-muted-foreground focus:ring-0"
+                required
               />
             </div>
             <div className="space-y-2">
-              <Label
+              <label
                 htmlFor="email"
-                className="text-[2rem] text-mainBlue sm:text-4xl"
+                className="text-[2rem] text-mainBlue sm:text-3xl"
               >
                 Email
-              </Label>
-              <Input
+              </label>
+              <input
                 id="email"
+                name="email"
                 type="email"
                 placeholder="john@example.com"
-                className="w-full border-none bg-muted px-4 py-3 text-primary-foreground placeholder:text-muted-foreground focus:ring-0"
+                className="w-full border-none bg-muted px-4 py-3 text-mainBlue placeholder:text-muted-foreground focus:ring-0"
+                required
               />
             </div>
           </div>
           <div className="space-y-2">
-            <Label
+            <label
               htmlFor="phone"
-              className="text-[2rem] text-mainBlue sm:text-4xl"
+              className="text-[2rem] text-mainBlue sm:text-3xl"
             >
               Phone
-            </Label>
-            <Input
+            </label>
+            <input
               id="phone"
+              name="phone"
               type="tel"
               placeholder="(123) 456-7890"
-              className="w-full border-none bg-muted px-4 py-3 text-primary-foreground placeholder:text-muted-foreground focus:ring-0"
+              className="w-full border-none bg-muted px-4 py-3 text-mainBlue placeholder:text-muted-foreground focus:ring-0"
+              required
             />
           </div>
           <div className="space-y-2">
-            <Label
+            <label
               htmlFor="message"
-              className="text-[2rem] text-mainBlue sm:text-4xl"
+              className="text-[2rem] text-mainBlue sm:text-3xl"
             >
               Message
-            </Label>
-            <Textarea
+            </label>
+            <textarea
               id="message"
+              name="message"
               rows={5}
-              placeholder="How can we help you?"
-              className="w-full border-none bg-muted px-4 py-3 text-primary-foreground placeholder:text-muted-foreground focus:ring-0 resize-none"
+              placeholder="I need a cleaning right now!"
+              className="w-full border-none bg-muted px-4 py-3 text-mainBlue placeholder:text-muted-foreground focus:ring-0 resize-none"
+              required
             />
           </div>
           <div className="flex justify-end">
