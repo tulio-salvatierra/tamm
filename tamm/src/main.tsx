@@ -1,18 +1,20 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "./App.tsx";
-import HomePage from "./pages/HomePage.tsx";
+import Root from "./routes/root.tsx";
+import ErrorPage from "./pages/ErrorPage.tsx";
 import "./index.css";
+import ServicesPage from "./pages/ServicesPage.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Root />,
+    errorElement: <ErrorPage />,
   },
   {
     path: "/services",
-    element: <HomePage />,
+    element: <ServicesPage />,
   },
 ]);
 

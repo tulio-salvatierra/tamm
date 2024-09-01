@@ -30,7 +30,7 @@ function About() {
                 <h1 className="text-2xl font-medium text-left">
                   Residential Cleaning
                 </h1>
-                <ul className=" text-slate-400 list-none text-left pl-4 ">
+                <ul className=" text-slate-400 list-none text-left pl-4">
                   <li>Regular Cleaning</li>
                   <li>Deep Cleaning</li>
                   <li>Move-In/Move-Out Cleaning</li>
