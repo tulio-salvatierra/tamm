@@ -17,7 +17,9 @@ function Header() {
 
   return (
     <header className="bg-white p-4 flex justify-between text-mainBlue shadow-xl  ">
-      <img src={Logo} className="p-2" alt="TAMM Logo" />
+      <a href="/">
+        <img src={Logo} className="p-2" alt="TAMM Logo" />
+      </a>
 
       <div className="flex w-auto ml-auto justify-end">
         {/* Desktop Menu */}

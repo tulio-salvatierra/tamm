@@ -14,7 +14,7 @@ export default function Footer() {
             commercial spaces.
           </p>
         </div>
-        <div className="grid gap-2">
+        <div className="grid gap-2 text-center">
           <h4 className="text-lg font-semibold">Quick Links</h4>
           <a
             href="/"
