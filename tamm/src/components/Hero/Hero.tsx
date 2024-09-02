@@ -31,7 +31,7 @@ function Hero() {
               <br />
               <br />
               <Button
-                className="text-mainBlue font-extrabold text-2xl p-6 rounded-lg mt-4 w-full hover:bg-lightBlue"
+                className="text-mainBlue text-2xl p-6 rounded-lg mt-4 w-full hover:bg-lightBlue"
                 onClick={scrollToForm}
               >
                 Book now!
