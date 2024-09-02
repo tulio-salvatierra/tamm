@@ -77,8 +77,8 @@ export default function ServicesPage() {
           </div>
         </div>
       </div>
-      <div className="text-center bg-green-100 shadow-2xl rounded-2xl sm:p-20">
-        <div className="bg-white p-8 rounded-2xl flex flex-col w-3/4 place-content-center mr-auto ml-auto">
+      <div className="text-center bg-green-100 shadow-2xl rounded-2xl sm:p-20 py-8">
+        <div className="bg-white p-8 rounded-2xl flex flex-col w-5/6 sm:3/4 place-content-center mr-auto ml-auto mt-4 mb-4">
           <h1 className="text-[2rem] bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter sm:text-8xl">
             Why Choose TAMM Cleaning Services?
           </h1>
@@ -100,10 +100,9 @@ export default function ServicesPage() {
               We’re not happy until you are!
             </li>
           </ul>
-          <h2 className="text-[2rem] text-mainBlue sm:text-3xl text-center p-4 justify-center mr-auto ml-auto">
-            Let TAMM Cleaning Services create a clean, healthy environment for
-            your home or business. Contact us today to schedule a cleaning
-            service that suits your needs!
+          <h2 className="text-[1.5rem] text-mainBlue sm:text-3xl text-center p-4 justify-center mr-auto ml-auto leading-none">
+            Send us your details so we can provide a quote and tell about our
+            welcome discount!
           </h2>
           <ContactForm />
         </div>
