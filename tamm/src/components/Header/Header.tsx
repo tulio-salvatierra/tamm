@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "../ui/button";
 import Logo from "./../../assets/TAMM_logo.svg";
 import Broom from "./../../assets/broom.svg";
+import HeroSVG from "./../../assets/blob-scene-haikei.svg";
 
 function Header() {
   const [showMenu, setShowMenu] = useState(false);
@@ -64,7 +65,16 @@ function Header() {
 
       {/* Mobile Menu */}
       {showMenu && (
-        <nav className="md:hidden fixed top-0 left-0 w-full h-full bg-white z-50 flex flex-col items-center p-4">
+        <nav
+          className="md:hidden fixed top-0 left-0 w-full h-full bg-white z-50 flex flex-col items-center p-4"
+          style={{
+            backgroundImage: `url(${HeroSVG})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            width: "100%",
+            height: "100%",
+          }}
+        >
           <Button
             className="p-4 bg-lightGreen text-mainBlue text-lg  mb-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-400 duration-300"
             onClick={scrollToFormHeader}
