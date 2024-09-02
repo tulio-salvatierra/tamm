@@ -74,7 +74,7 @@ function Header() {
           <a href="/" className="block mb-4 text-xl">
             Home
           </a>
-          <a href="/" className="block mb-4 text-xl">
+          <a href="/services" className="block mb-4 text-xl">
             Services
           </a>
           <a href="/" className="block mb-4 text-xl">
