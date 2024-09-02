@@ -61,7 +61,7 @@ export function ContactForm() {
                 Name
               </label>
               <input
-                id="name"
+                id="user_name"
                 name="user_name"
                 type="text"
                 placeholder="John Doe"
