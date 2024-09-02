@@ -25,9 +25,9 @@ export default async function handler(req, res) {
   const { email } = req.body;
   console.log({ email });
 
-  // if (!email || !/.+@.+\..+/.test(email)) {
-  //   return res.status(400).json({ message: "Invalid email" });
-  // }
+  if (!email || !/.+@.+\..+/.test(email)) {
+    return res.status(400).json({ message: "Invalid email" });
+  }
 
   try {
     const client = await connectToDatabase(process.env.MONGODB_URI); // Accessing the environment variable directly
