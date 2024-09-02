@@ -87,10 +87,10 @@ function Header() {
           <a href="/services" className="block mb-4 text-xl">
             Services
           </a>
-          <a href="/" className="block mb-4 text-xl">
+          <a href="#about" className="block mb-4 text-xl">
             About
           </a>
-          <a href="/" className="block mb-4 text-xl">
+          <a href="#contact" className="block mb-4 text-xl">
             Contact
           </a>
           <button className="text-mainBlue text-xl  mt-4" onClick={toggleMenu}>
