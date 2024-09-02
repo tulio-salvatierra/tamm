@@ -4,20 +4,23 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./pages/ErrorPage.tsx";
 import Services from "./routes/services.tsx";
 import "./index.css";
-import HomePage from "./pages/HomePage.tsx";
+
+import Root from "./routes/root.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage />,
+    element: <Root />,
     errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "/services",
-        element: <Services />,
-        errorElement: <ErrorPage />,
-      },
-    ],
+  },
+  {
+    path: "/services",
+    element: <Services />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/api/subscribe",
+    errorElement: <ErrorPage />,
   },
 ]);
 

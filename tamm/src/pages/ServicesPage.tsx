@@ -1,5 +1,3 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import Main from "./../assets/services/services.png";
 import Residential from "./../assets/services/residential.png";
 import Commercial from "./../assets/services/commercial.png";
@@ -8,7 +6,6 @@ import { ContactForm } from "@/components/ui/contact-form";
 export default function ServicesPage() {
   return (
     <>
-      <Header />
       <div className=" p-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-gray-100 p-4 rounded-2xl my-6 h-3/4">
           <div className="text-left place-content-center">
@@ -111,7 +108,6 @@ export default function ServicesPage() {
           <ContactForm />
         </div>
       </div>
-      <Footer />
     </>
   );
 }

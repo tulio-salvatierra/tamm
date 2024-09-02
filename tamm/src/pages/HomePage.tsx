@@ -4,19 +4,17 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Why from "@/components/Why";
 import Contact from "@/components/Contact";
+import CTA from "@/components/CTA";
 
 export default function HomePage() {
   return (
     <>
-      <div className="header">
-        <Header />
-      </div>
+      <Header />
       <Hero />
       <About />
+      <CTA />
       <Why />
-      <div id="contact">
-        <Contact />
-      </div>
+      <Contact />
       <Footer />
     </>
   );
