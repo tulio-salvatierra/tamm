@@ -79,39 +79,38 @@ export default function ServicesPage() {
             <img src={Commercial} alt="residential" className="rounded-2xl" />
           </div>
         </div>
-        <div className="text-center bg-green-100 shadow-2xl rounded-2xl sm:p-20">
-          <div className="bg-white p-8 rounded-2xl flex flex-col w-3/4 place-content-center mr-auto ml-auto">
-            <h1 className="text-[2rem] bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter sm:text-8xl">
-              Why Choose TAMM Cleaning Services?
-            </h1>
-            <ul className="text-slate-400 text-left justify-center pl-4 my-4 ml-auto mr-auto list-disc">
-              <li>
-                Experienced and Trusted Team: Our trained professionals are
-                committed to providing the highest quality of service.
-              </li>
-              <li>
-                Eco-Friendly Products: We use environmentally safe products to
-                protect your space and the planet.
-              </li>
-              <li>
-                Flexible Scheduling: We work around your schedule to provide
-                convenient and efficient cleaning services.
-              </li>
-              <li>
-                Satisfaction Guaranteed: Your satisfaction is our top priority.
-                We’re not happy until you are!
-              </li>
-            </ul>
-            <h2 className="text-[2rem] text-mainBlue sm:text-3xl text-center p-4 justify-center mr-auto ml-auto">
-              Let TAMM Cleaning Services create a clean, healthy environment for
-              your home or business. Contact us today to schedule a cleaning
-              service that suits your needs!
-            </h2>
-            <ContactForm />
-          </div>
+      </div>
+      <div className="text-center bg-green-100 shadow-2xl rounded-2xl sm:p-20">
+        <div className="bg-white p-8 rounded-2xl flex flex-col w-3/4 place-content-center mr-auto ml-auto">
+          <h1 className="text-[2rem] bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter sm:text-8xl">
+            Why Choose TAMM Cleaning Services?
+          </h1>
+          <ul className="text-slate-400 text-left justify-center pl-4 my-4 ml-auto mr-auto list-disc">
+            <li>
+              Experienced and Trusted Team: Our trained professionals are
+              committed to providing the highest quality of service.
+            </li>
+            <li>
+              Eco-Friendly Products: We use environmentally safe products to
+              protect your space and the planet.
+            </li>
+            <li>
+              Flexible Scheduling: We work around your schedule to provide
+              convenient and efficient cleaning services.
+            </li>
+            <li>
+              Satisfaction Guaranteed: Your satisfaction is our top priority.
+              We’re not happy until you are!
+            </li>
+          </ul>
+          <h2 className="text-[2rem] text-mainBlue sm:text-3xl text-center p-4 justify-center mr-auto ml-auto">
+            Let TAMM Cleaning Services create a clean, healthy environment for
+            your home or business. Contact us today to schedule a cleaning
+            service that suits your needs!
+          </h2>
+          <ContactForm />
         </div>
       </div>
-
       <Footer />
     </>
   );
