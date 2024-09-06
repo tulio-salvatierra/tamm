@@ -11,8 +11,8 @@ export default function HomePage() {
     <>
       <Header />
       <Hero />
-      <About />
       <CTA />
+      <About />
       <Why />
       <Contact />
       <Footer />
