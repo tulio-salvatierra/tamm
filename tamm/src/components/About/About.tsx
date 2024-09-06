@@ -1,5 +1,5 @@
 import Check from "./../../assets/check.svg";
-import BlueClean from "./../../assets/mary.jpg";
+import BlueClean from "./../../assets/mary.jpeg";
 
 function About() {
   return (
@@ -63,7 +63,7 @@ function About() {
             width="550"
             height="310"
             alt="Cleaning Service"
-            className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
+            className="mx-auto overflow-hidden rounded-xl object-cover object-center sm:w-full"
           />
         </div>
       </div>
