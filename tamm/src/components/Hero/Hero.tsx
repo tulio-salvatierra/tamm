@@ -1,6 +1,6 @@
 import yellow from "./../../assets/clean-home.png";
 import { Button } from "./../ui/button";
-import HeroSvg from "./../../assets/blob-scene-haikei.svg";
+import HeroSvg from "./../../assets/hero.svg";
 
 function Hero() {
   const scrollToForm = () => {
@@ -27,11 +27,13 @@ function Hero() {
             </h1>
             <p className="p-4 bg-transparent text-4xl text-slate-400 max-w-[900px] md:text-2xl lg:text-2xl xl:text-2xl ">
               TAMM cleaning services will have you experience your home like{" "}
-              <a className="text-mainBlue text-[2rem]">never before!</a>
+              <a className="text-mainBlue text-[2.5rem] leading-none tracking-tighter underline">
+                never before!
+              </a>
               <br />
               <br />
               <Button
-                className="text-mainBlue text-2xl p-6 rounded-lg mt-4 w-full hover:bg-lightBlue"
+                className="text-mainBlue tracking-tighter  text-2xl p-6 rounded-lg mt-4 w-full hover:bg-lightBlue"
                 onClick={scrollToForm}
               >
                 Book now!

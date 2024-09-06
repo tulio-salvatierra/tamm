@@ -1,20 +1,18 @@
 import Check from "./../../assets/check.svg";
 import BlueClean from "./../../assets/mary.jpeg";
-import AboutSVG from "./../../assets/blob-scene-haikei_(1).svg";
+import AboutSVG from "./../../assets/about.svg";
 
 function About() {
   return (
     <section
-      className="w-full py-12 md:py-24 lg:py-32"
       id="about"
       style={{
         backgroundImage: `url(${AboutSVG})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundRepeat: "no-repeat", // Ensure the image doesn't repeat
       }}
     >
-      <div className="container px-4 md:px-6">
+      <div className="container-xxl bg-inherit py-12 md:py-24 lg:py-32">
         <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
           <div className="space-y-4">
             <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm text-mainBlue font-black">
@@ -23,7 +21,7 @@ function About() {
             <h1 className="text-[2rem] text-mainBlue font-ultrablack tracking-tighter sm:text-8xl">
               Cleaning Services You Can Trust
             </h1>
-            <p className="w-100 text-slate-300 text-left md:text-xl lg:text-base/relaxed xl:text-xl/relaxed rounded-2xl p-4">
+            <p className="w-100 text-slate-500 text-left md:text-xl lg:text-base/relaxed xl:text-xl/relaxed rounded-2xl p-4">
               TAMM Cleaning Services was founded on the principles of quality,
               reliability, and customer care. Our family-owned business in
               Chicago has built a reputation for excellence in cleaning

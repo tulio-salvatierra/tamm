@@ -6,7 +6,7 @@ import { ContactForm } from "@/components/ui/contact-form";
 export default function ServicesPage() {
   return (
     <>
-      <div className=" p-8">
+      <div className="container-xxl bg-inherit py-12 md:py-24 lg:py-32">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-gray-100 p-4 rounded-2xl my-6 h-3/4">
           <div className="text-left place-content-center">
             <h1 className="text-[2rem] text-mainBlue sm:text-3xl">

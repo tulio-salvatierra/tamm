@@ -121,7 +121,7 @@ export function ContactForm() {
           <div className="flex justify-end">
             <Button
               type="submit"
-              className="text-mainBlue bg-primary text-primary-foreground hover:bg-primary/90 focus:ring-primary"
+              className="text-mainBlue tracking-tighter  text-2xl p-6 rounded-lg mt-4 w-full hover:bg-lightBlue"
             >
               Submit
             </Button>

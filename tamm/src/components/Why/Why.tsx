@@ -17,7 +17,7 @@ function Why() {
               services with unparalleled customer satisfaction.
             </p>
           </div>
-          <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12">
+          <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 sm:grid-cols-1 lg:grid-cols-3 lg:gap-12">
             <div className="grid gap-1 bg-muted p-4 rounded-xl">
               <div className="flex flex-col items-center gap-2">
                 <img src={Bucket} className="h-[3rem]" alt="bucket" />
