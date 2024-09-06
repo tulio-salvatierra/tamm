@@ -1,43 +1,48 @@
-import { MongoClient } from "mongodb";
+// api/storeEmail.js
+const { MongoClient } = require("mongodb");
+
+// MongoDB connection string and database from environment variables
+const uri = process.env.MONGODB_URI;
+const dbName = process.env.MONGODB_DB;
 
 let cachedClient = null;
+let cachedDb = null;
 
-async function connectToDatabase(uri) {
-  if (cachedClient) {
-    return cachedClient;
+async function connectToDatabase() {
+  if (cachedClient && cachedDb) {
+    return { client: cachedClient, db: cachedDb };
   }
-  const client = new MongoClient(uri, {
+
+  const client = await MongoClient.connect(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
-  await client.connect();
+
+  const db = client.db(dbName);
   cachedClient = client;
-  return client;
+  cachedDb = db;
+
+  return { client, db };
 }
 
 export default async function handler(req, res) {
-  if (req.method !== "POST") {
-    return res
-      .status(405)
-      .json({ message: `Method ${req.method} not allowed` });
-  }
+  if (req.method === "POST") {
+    const { email } = req.body;
 
-  const { email } = req.body;
-  console.log({ email });
+    if (!email) {
+      return res.status(400).json({ error: "Email is required" });
+    }
 
-  try {
-    const client = await connectToDatabase(process.env.MONGODB_URI); // Accessing the environment variable directly
-    const db = client.db("emailList");
-    const collection = db.collection("subscribedEmails");
+    try {
+      const { db } = await connectToDatabase();
+      const collection = db.collection("emails");
+      await collection.insertOne({ email, createdAt: new Date() });
 
-    await collection.insertOne({
-      email,
-      date: new Date(),
-    });
-
-    return res.status(200).json({ message: "Email saved successfully" });
-  } catch (error) {
-    console.error("Error in serverless function:", error);
-    return res.status(500).json({ message: "Internal server error" });
+      return res.status(201).json({ message: "Email stored successfully" });
+    } catch (error) {
+      return res.status(500).json({ error: "Database connection error" });
+    }
+  } else {
+    return res.status(405).json({ error: "Method not allowed" });
   }
 }
