@@ -42,15 +42,15 @@ export default function CTA() {
   return (
     <section className="bg-gradient-to-r from-indigo-700 via-indigo-500 to-indigo-300 py-12">
       <div className="container mx-auto px-4 md:px-6 text-center">
-        <h2 className="text-2xl font-bold text-white sm:text-3xl md:text-4xl">
+        <h2 className="text-4xl font-bold text-white sm:text-6xl">
           Stay up-to-date with our latest offers
         </h2>
-        <p className="mt-4 text-white md:text-lg">
+        <p className="mt-4 text-white md:text-lg w-75">
           Subscribe to our newsletter and be the first to know about our
           exclusive deals and new product launches.
         </p>
         <form
-          className="mt-10 grid flex-col items-center gap-4 sm:flex-row"
+          className="mt-20 grid flex-col items-center gap-4"
           onSubmit={handleSubmit}
         >
           <input
@@ -58,17 +58,21 @@ export default function CTA() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter your email"
-            className="self-center justify-center ml-auto mr-auto w-full max-w-md rounded-md border-transparent bg-white p-3 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:flex-1"
+            className="self-center justify-center ml-auto mr-auto w-1/2 max-w-md rounded-md border-transparent bg-white p-3 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:flex-1"
             required
           />
           <button
             type="submit"
-            className="inline-flex h-12 w-full items-center justify-center rounded-md bg-indigo-600 px-6 text-sm font-medium text-white transition-colors hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+            className="inline-flex h-12 items-center justify-center ml-auto mr-auto rounded-md bg-indigo-300 px-6 text-xl font-medium text-white transition-colors hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-1/2"
           >
             Subscribe
           </button>
         </form>
-        {message && <p className="mt-4 text-white">{message}</p>}
+        {message && (
+          <p className="mt-4 text-red-600 bg-slate-100  rounded-xl w-1/4 ml-auto mr-auto p-2">
+            {message}
+          </p>
+        )}
       </div>
     </section>
   );
