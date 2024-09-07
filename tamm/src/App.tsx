@@ -1,27 +1,18 @@
 import "./App.css";
-import About from "./components/About";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Why from "./components/Why";
-import Contact from "./components/Contact";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import ServicesPage from "./pages/ServicesPage";
+import ErrorPage from "./pages/ErrorPage";
 
 function App() {
   return (
-    <>
-      <div className="App">
-        <div className="header">
-          <Header />
-        </div>
-        <Hero />
-        <About />
-        <Why />
-        <div id="contact">
-          <Contact />
-        </div>
-        <Footer />
-      </div>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="services" element={<ServicesPage />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+    </Router>
   );
 }
 

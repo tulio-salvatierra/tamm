@@ -26,7 +26,7 @@ function Header() {
         {/* Desktop Menu */}
         <nav className="hidden md:flex p-4 text-right justify-end items-center">
           <Button
-            className="p-4 bg-lightGreen text-mainBlue text-lg  justify-self-end self-center ml-auto mx-20 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-150 hover:bg-indigo-100 duration-100"
+            className="p-4 bg-lightGreen text-mainBlue text-lg  justify-self-end self-center ml-auto mx-20 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-100 hover:bg-indigo-100 duration-100"
             onClick={scrollToFormHeader}
           >
             Book now!
@@ -83,24 +83,28 @@ function Header() {
               Book now!
             </Button>
             <a
+              onClick={toggleMenu}
               href="/"
               className="justify-center text-mainBlue relative text-2xl block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
             >
               Home
             </a>
             <a
+              onClick={toggleMenu}
               href="/services"
               className="justify-center text-mainBlue relative text-2xl block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
             >
               Services
             </a>
             <a
+              onClick={toggleMenu}
               href="#about"
               className="justify-center text-mainBlue relative text-2xl block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
             >
               About
             </a>
             <a
+              onClick={toggleMenu}
               href="#contact"
               className="justify-center text-mainBlue relative text-2xl block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
             >
@@ -114,7 +118,10 @@ function Header() {
             </button>
           </div>
           <footer className="content-end">
-            <div className="flex flex-col items-start gap-4">
+            <div
+              className="flex flex-col items-start gap-4"
+              onClick={toggleMenu}
+            >
               <a href="#" className="flex items-center gap-2">
                 <img src={Logo} alt="Sparkling Clean" className="w-50 h-auto" />
               </a>

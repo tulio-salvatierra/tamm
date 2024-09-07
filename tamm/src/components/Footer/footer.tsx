@@ -23,7 +23,7 @@ export default function Footer() {
             Home
           </a>
           <a
-            href="#about"
+            href="/#about"
             className="justify-center text-mainBlue relative text-2xl block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
           >
             About
@@ -35,7 +35,7 @@ export default function Footer() {
             Services
           </a>
           <a
-            href="#contact"
+            href="/#contact"
             className="justify-center text-mainBlue relative text-2xl block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
           >
             Contact

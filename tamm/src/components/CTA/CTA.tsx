@@ -40,7 +40,7 @@ export default function CTA() {
   };
 
   return (
-    <section className="bg-gradient-to-r from-indigo-700 via-indigo-500 to-indigo-300 py-12">
+    <section className="bg-gradient-to-b from-mainBlue to-lightGreen py-12">
       <div className="container mx-auto px-4 md:px-6 text-center">
         <h2 className="text-4xl font-bold text-white sm:text-6xl">
           Stay up-to-date with our latest offers
@@ -63,7 +63,7 @@ export default function CTA() {
           />
           <button
             type="submit"
-            className="inline-flex h-12 items-center justify-center ml-auto mr-auto rounded-md bg-indigo-300 px-6 text-xl font-medium text-white transition-colors hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-1/2"
+            className="bg-white inline-flex h-12 items-center justify-center ml-auto mr-auto rounded-md transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-150  duration-100 px-6 text-xl font-medium text-mainBlue  focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-1/4"
           >
             Subscribe
           </button>
