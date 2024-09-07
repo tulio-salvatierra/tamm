@@ -1,5 +1,4 @@
-// api/storeEmail.js
-const { MongoClient } = require("mongodb");
+import { MongoClient } from "mongodb";
 
 // MongoDB connection string and database from environment variables
 const uri = process.env.MONGODB_URI;
