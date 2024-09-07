@@ -18,10 +18,6 @@ const router = createBrowserRouter([
     element: <Services />,
     errorElement: <ErrorPage />,
   },
-  {
-    path: "/api/subscribe",
-    errorElement: <ErrorPage />,
-  },
 ]);
 
 createRoot(document.getElementById("root")!).render(
