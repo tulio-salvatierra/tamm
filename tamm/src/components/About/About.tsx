@@ -24,7 +24,7 @@ function About() {
             <div className="grid grid-cols-2 gap-4 text-left">
               <div className="space-y-2 bg-gradient-to-tr from-lime-300 to-emerald-400 text-white p-4 rounded-lg">
                 <img src={Check} alt="about-icon" />
-                <h1 className=" font-medium text-left font-ultrablack text-slate-100">
+                <h1 className="text-2xl flex font-medium font-ultrablack text-slate-100">
                   Residential Cleaning
                 </h1>
                 <ul className="text-slate-500 text-xl list-none text-left pl-4">
