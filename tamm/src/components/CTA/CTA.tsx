@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CTAimage from "./../../assets/tuliosal_an_attractive_cleaner_waiting_for_a_customers_reply_in_32061b94-cecf-4898-90e5-860a11a6b63d.png";
 
 export default function CTA() {
   const [email, setEmail] = useState("");
@@ -40,14 +41,14 @@ export default function CTA() {
   };
 
   return (
-    <section className="bg-gradient-to-b from-mainBlue to-lightGreen py-12">
-      <div className="container mx-auto px-4 md:px-6 text-center">
+    <section className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-gradient-to-tr from-lime-300 to-emerald-400 h-3/4 p-8">
+      <div className="container mx-auto px-4 md:px-6 text-center place-content-center">
         <h2 className="text-4xl font-bold text-white sm:text-6xl">
           Stay up-to-date with our latest offers
         </h2>
-        <p className="mt-4 text-white md:text-lg w-75">
+        <p className="mt-4 text-white md:text-xl w-50">
           Subscribe to our newsletter and be the first to know about our
-          exclusive deals and new product launches.
+          exclusive <a className="font-black">first cleaning discount deals!</a>
         </p>
         <form
           className="mt-20 grid flex-col items-center gap-4"
@@ -73,6 +74,13 @@ export default function CTA() {
             {message}
           </p>
         )}
+      </div>
+      <div className="image">
+        <img
+          src={CTAimage}
+          alt="callToAction"
+          className="rounded-2xl h-100 bg-fit"
+        />
       </div>
     </section>
   );
