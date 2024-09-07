@@ -4,7 +4,7 @@ import Hanger from "./../../assets/hanger.svg";
 
 function Why() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 ">
+    <section className="w-full py-12 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
@@ -47,7 +47,7 @@ function Why() {
                 cleaning that’s good for both you and the Earth.
               </p>
             </div>
-            <div className="grid gap-1 bg-muted p-4 rounded-xl h-[388px]">
+            <div className="grid gap-1 bg-muted p-4 rounded-xl sm:h-[388px] md:h-[388px]">
               <div className="flex flex-col items-center gap-2">
                 <img src={Hanger} className="h-[4rem]" alt="hanger" />
                 <h3 className="text-lg font-bold bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack ">

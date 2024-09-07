@@ -6,13 +6,14 @@ function About() {
   return (
     <section
       id="about"
+      className="w-full py-12 md:py-24 lg:py-32"
       style={{
         backgroundImage: `url(${AboutSVG})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <div className="container-xxl bg-inherit py-12 md:py-24 lg:py-32">
+      <div className="container px-4 md:px-6">
         <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
           <div className="space-y-4">
             <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm text-mainBlue font-black">
