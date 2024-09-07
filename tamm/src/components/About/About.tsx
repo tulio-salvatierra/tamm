@@ -1,18 +1,9 @@
 import Check from "./../../assets/check.svg";
 import BlueClean from "./../../assets/mary.jpeg";
-import AboutSVG from "./../../assets/about.svg";
 
 function About() {
   return (
-    <section
-      id="about"
-      className="w-full py-12 md:py-24 lg:py-32"
-      style={{
-        backgroundImage: `url(${AboutSVG})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+    <section id="about" className="w-full py-12 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6">
         <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
           <div className="space-y-4">
@@ -33,10 +24,10 @@ function About() {
             <div className="grid grid-cols-2 gap-4 text-left">
               <div className="space-y-2 bg-gradient-to-tr from-lime-300 to-emerald-400 text-white p-4 rounded-lg">
                 <img src={Check} alt="about-icon" />
-                <h1 className="text-2xl font-medium text-left font-ultrablack text-slate-100">
+                <h1 className=" font-medium text-left font-ultrablack text-slate-100">
                   Residential Cleaning
                 </h1>
-                <ul className="text-slate-500 list-none text-left pl-4">
+                <ul className="text-slate-500 text-xl list-none text-left pl-4">
                   <li>Regular Cleaning</li>
                   <li>Deep Cleaning</li>
                   <li>Move-In/Move-Out Cleaning</li>
@@ -47,7 +38,7 @@ function About() {
                 <h1 className="text-2xl font-medium font-ultrablack text-slate-100">
                   Commercial Cleaning
                 </h1>
-                <ul className="text-slate-500 list-none text-left pl-4">
+                <ul className="text-slate-500 text-xl list-none text-left pl-4">
                   <li>Office Cleaning</li>
                   <li>Restaurant Cleaning</li>
                   <li>Retail Cleaning</li>
@@ -58,7 +49,7 @@ function About() {
                 <h1 className="text-2xl flex font-medium font-ultrablack text-slate-100">
                   Specialized Services:
                 </h1>
-                <ul className="text-slate-500 list-none text-left pl-4">
+                <ul className="text-slate-500 text-xl list-none text-left pl-4">
                   <li>Carpet Cleaning</li>
                   <li>Window Washing</li>
                   <li>Post-Construction Cleaning</li>

@@ -5,6 +5,7 @@ import About from "@/components/About";
 import Why from "@/components/Why";
 import Contact from "@/components/Contact";
 import CTA from "@/components/CTA";
+import AboutSVG from "./../assets/about.svg";
 
 export default function HomePage() {
   return (
@@ -12,9 +13,17 @@ export default function HomePage() {
       <Header />
       <Hero />
       <CTA />
-      <About />
-      <Why />
-      <Contact />
+      <div
+        style={{
+          backgroundImage: `url(${AboutSVG})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <About />
+        <Why />
+        <Contact />
+      </div>
       <Footer />
     </>
   );
