@@ -15,9 +15,7 @@ function Services() {
     >
       <section className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-gray-100/50 p-4 rounded-2xl my-6 h-3/4">
         <div className="text-left place-content-center">
-          <h1 className="text-[4rem] text-mainBlue sm:text-4xl">
-            Our Services
-          </h1>
+          <h1 className="text-mainBlue text-6xl mb-6">Our Services</h1>
           <p className="w-100 text-slate-500 text-left  md:text-2xl lg:text-2xl xl:text-2xl rounded-2xl sm:w-3/4 border-teal-100">
             At TAMM Cleaning Services, we offer a comprehensive range of
             cleaning solutions tailored to meet the unique needs of both
@@ -37,7 +35,7 @@ function Services() {
             <img src={Residential} alt="residential" className="rounded-2xl" />
           </div>
           <div className="text-left place-content-center">
-            <h1 className="text-[2rem] text-mainBlue sm:text-3xl">
+            <h1 className="text-mainBlue text-6xl mb-6">
               Residential Cleaning Services
             </h1>
             <p className="w-100 text-slate-500 bg-opacity-10 text-left  md:text-2xl lg:text-2xl xl:text-2xl rounded-2xl sm:w-3/4 border-teal-100">
@@ -69,7 +67,7 @@ function Services() {
       </section>
       <section className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-gray-100/50 p-4 rounded-2xl my-5">
         <div className="text-left place-content-center">
-          <h1 className="text-[2rem] text-mainBlue sm:text-3xl">
+          <h1 className="text-mainBlue text-6xl mb-6">
             Commercial Cleaning Services
           </h1>
           <p className="w-100 text-slate-500 bg-opacity-10 text-left  md:text-2xl lg:text-2xl xl:text-2xl rounded-2xl sm:w-3/4 border-teal-100">
