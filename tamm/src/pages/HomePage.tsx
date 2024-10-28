@@ -6,12 +6,14 @@ import Why from "@/components/Why";
 import Contact from "@/components/Contact";
 import CTA from "@/components/CTA";
 import AboutSVG from "./../assets/about.svg";
+import FloatingCallButton from "@/components/floatingCallButton";
 
 export default function HomePage() {
   return (
     <>
       <Header />
       <Hero />
+      <FloatingCallButton />
       <CTA />
       <div
         style={{
