@@ -38,7 +38,7 @@ export function ContactForm() {
 
   return (
     <section
-      className="w-full max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20"
+      className="w-full sm:h-screen max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20"
       id="contact"
     >
       <div className="space-y-6">

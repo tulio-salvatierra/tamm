@@ -37,7 +37,7 @@ export default function FloatingCallButton() {
   }, []);
 
   return (
-    <div className="fixed bottom-4 right-4" ref={buttonRef}>
+    <div className="fixed bottom-4 right-2" ref={buttonRef}>
       <a
         href="tel:+17739199161"
         aria-label="Call us now at +1 (773) 919-9161"
