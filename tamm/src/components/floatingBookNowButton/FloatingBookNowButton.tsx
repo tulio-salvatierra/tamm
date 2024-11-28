@@ -27,7 +27,7 @@ export default function FloatingCallButton() {
 
     // ScrollTrigger animation for config.strength
     gsap.to(config, {
-      strength: 1,
+      strength: 0.1,
       ease: "none",
       scrollTrigger: {
         scrub: true,
@@ -36,11 +36,11 @@ export default function FloatingCallButton() {
   }, []);
 
   return (
-    <div className="fixed bottom-2 right-1" ref={buttonRef}>
+    <div className="fixed bottom-2 right-1 md:right-2 z-50" ref={buttonRef}>
       <a
         href="https://app.squareup.com/appointments/book/1r0stwdix9bhap/LSC34DPQB3S6R/start"
         aria-label="Booking app button"
-        className="flex items-center p-4 bg-lightGreen text-white text-lg rounded-full  transition-transform transform hover:scale-105 shadow-md shadow-green-500/20  hover:shadow-lg hover:shadow-green-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+        className="w-[135px] flex items-center p-4 bg-lightGreen text-white text-lg rounded-full  transition-transform transform hover:scale-105 shadow-md shadow-green-500/20  hover:shadow-lg hover:shadow-green-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
       >
         <img
           width="24"

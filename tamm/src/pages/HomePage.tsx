@@ -14,8 +14,7 @@ export default function HomePage() {
     <>
       <Header />
       <Hero />
-      <FloatingCallButton />
-      <FloatingBookNowButton />
+
       <CTA />
       <div
         style={{
@@ -28,6 +27,8 @@ export default function HomePage() {
         <Why />
         <Contact />
       </div>
+      <FloatingCallButton />
+      <FloatingBookNowButton />
       <Footer />
     </>
   );
