@@ -7,6 +7,7 @@ import Contact from "@/components/Contact";
 import CTA from "@/components/CTA";
 import AboutSVG from "./../assets/about.svg";
 import FloatingCallButton from "@/components/floatingCallButton";
+import FloatingBookNowButton from "@/components/floatingBookNowButton";
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <Header />
       <Hero />
       <FloatingCallButton />
+      <FloatingBookNowButton />
       <CTA />
       <div
         style={{

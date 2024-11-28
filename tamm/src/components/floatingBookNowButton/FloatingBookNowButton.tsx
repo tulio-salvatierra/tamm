@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Phone from "../../assets/phone.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -37,14 +36,19 @@ export default function FloatingCallButton() {
   }, []);
 
   return (
-    <div className="fixed bottom-20 right-4" ref={buttonRef}>
+    <div className="fixed bottom-2 right-1" ref={buttonRef}>
       <a
-        href="tel:+17739199161"
-        aria-label="Call us now at +1 (773) 919-9161"
-        className="flex items-center p-4 bg-mainBlue text-lightGreen text-lg rounded-full  transition-transform transform hover:scale-105 shadow-md shadow-green-500/20  hover:shadow-lg hover:shadow-green-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+        href="https://app.squareup.com/appointments/book/1r0stwdix9bhap/LSC34DPQB3S6R/start"
+        aria-label="Booking app button"
+        className="flex items-center p-4 bg-lightGreen text-white text-lg rounded-full  transition-transform transform hover:scale-105 shadow-md shadow-green-500/20  hover:shadow-lg hover:shadow-green-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
       >
-        <img src={Phone} alt="Phone icon" className="mr-2 w-5 h-5" />
-        Call now
+        <img
+          width="24"
+          height="24"
+          src="https://img.icons8.com/material-outlined/24/event-accepted.png"
+          alt="event-accepted"
+        />
+        Book now
       </a>
     </div>
   );
