@@ -29,7 +29,6 @@ export default function ServicesPage() {
           content="Explore Tamm Cleaning Services' extensive offerings, from residential upkeep to intensive deep cleans, all tailored to Chicago residents. Keywords: house cleaning service Chicago, maid service in Chicago, residential cleaning Chicago, deep cleaning services Chicago, apartment cleaning Chicago."
         />
       </Helmet>
-
       <Header />
       <Services />
       <FloatingCallButton />

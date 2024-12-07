@@ -24,13 +24,13 @@ export default function Pricing() {
   const [selectedCategory, setSelectedCategory] = useState(categories[0].name);
 
   return (
-    <section id="pricing" className="container mx-auto px-4 py-16">
-      <h2 className="text-[2rem] text-mainBlue font-ultrablack tracking-tighter sm:text-8xl mb-4">
+    <div id="pricing" className="container mx-auto px-4 py-16">
+      <h2 className="text-[2rem] text-mainBlue font-ultrablack tracking-tighter sm:text-8xl mb-20">
         Our Cleaning Services
       </h2>
 
       {/* Mobile Select */}
-      <div className="md:hidden mb-8">
+      <div className="md:hidden mb-8 mt-8 flex content-center">
         <Select
           onValueChange={setSelectedCategory}
           defaultValue={selectedCategory}
@@ -68,11 +68,13 @@ export default function Pricing() {
           className={selectedCategory === category.name ? "block" : "hidden"}
         >
           <div className="text-center mb-8">
-            <h3 className="text-h3 text-mainBlue font-ultrablack tracking-tighter ">
+            <h3 className="text-h2 text-mainBlue font-ultrablack tracking-tighter ">
               {category.name}
             </h3>
-            <p className="text-body  text-left mb-4">{category.intro}</p>
-            <p className="text-body  text-left mb-4 ">{category.description}</p>
+            <p className="text-body  text-left mb-4 w-75">{category.intro}</p>
+            <p className="text-body  text-left mb-4 w-75">
+              {category.description}
+            </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             {category.plans.map((plan) => (
@@ -85,7 +87,7 @@ export default function Pricing() {
                     {plan.name}
                   </CardTitle>
                   <CardDescription>
-                    <span className="text-h2 leading-none bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter text-3xl font-bold">
+                    <span className="text-h3 leading-none bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter text-3xl font-bold">
                       {plan.price}
                     </span>
                   </CardDescription>
@@ -118,6 +120,6 @@ export default function Pricing() {
           </div>
         </div>
       ))}
-    </section>
+    </div>
   );
 }
