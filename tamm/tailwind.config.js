@@ -17,6 +17,13 @@ module.exports = {
       },
     },
     extend: {
+      fontSize: {
+        h1: ["3rem"],
+        h2: ["2.5rem"],
+        h3: ["2rem"],
+        body: ["1rem"],
+        accent: ["1.75rem"],
+      },
       colors: {
         transparent: "transparent",
         mainBlue: "#0C4BA9",

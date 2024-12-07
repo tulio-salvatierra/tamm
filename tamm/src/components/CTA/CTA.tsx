@@ -41,14 +41,17 @@ export default function CTA() {
   };
 
   return (
-    <section className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-gradient-to-tr from-lime-300 to-emerald-400 h-3/4 p-8">
-      <div className="container mx-auto px-4 md:px-6 text-center place-content-center">
-        <h2 className="text-4xl font-bold text-white sm:text-6xl">
-          Stay up-to-date with our latest offers
+    <section className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-gradient-to-tr from-lime-100 to-emerald-400 h-3/4 p-8">
+      <div className="container mx-auto px-4 md:px-6 text-left place-content-center">
+        <h2 className="text-4xl text-h1 leading-none bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter">
+          Get Chicago’s Best Home Cleaning Offers
         </h2>
-        <p className="mt-4 text-white md:text-xl w-50">
-          Subscribe to our newsletter and be the first to know about our
-          exclusive <a className="font-black">first cleaning discount deals!</a>
+        <p className="p-4 bg-transparent text-h2 text-slate-400 max-w-[900px] md:text-lg lg:text-lg xl:text-lg">
+          Subscribe to our newsletter and be the first to know about exclusive
+          deals on house cleaning service in Chicago, maid service in Chicago,
+          residential cleaning Chicago, deep cleaning services Chicago, and
+          apartment cleaning Chicago. Stay ahead with the latest promotions and
+          transform your home into a spotless, inviting space.
         </p>
         <form
           className="mt-20 grid flex-col items-center gap-4"
