@@ -1,6 +1,6 @@
 import { useState } from "react";
 import CTAimage from "./../../assets/cta.jpeg";
-import { Button } from "../ui/button";
+import { Button } from "../ui/callButton";
 
 export default function CTA() {
   const [email, setEmail] = useState("");

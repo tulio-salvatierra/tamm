@@ -1,7 +1,7 @@
-import { useState } from 'react'
-import { Check } from 'lucide-react'
+import { useState } from "react";
+import { Check } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/callButton";
 import {
   Card,
   CardContent,
@@ -9,14 +9,14 @@ import {
   CardHeader,
   CardTitle,
   CardDescription,
-} from "@/components/ui/card"
+} from "@/components/ui/card";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
+} from "@/components/ui/select";
 
 const categories = [
   {
@@ -130,18 +130,23 @@ const categories = [
       },
     ],
   },
-]
+];
 
 export default function PricingComponent() {
-  const [selectedCategory, setSelectedCategory] = useState(categories[0].name)
+  const [selectedCategory, setSelectedCategory] = useState(categories[0].name);
 
   return (
     <div className="container mx-auto px-4 py-16">
-      <h2 className="text-3xl font-bold text-center mb-12">Our Cleaning Services</h2>
-      
+      <h2 className="text-3xl font-bold text-center mb-12">
+        Our Cleaning Services
+      </h2>
+
       {/* Mobile Select */}
       <div className="md:hidden mb-8">
-        <Select onValueChange={setSelectedCategory} defaultValue={selectedCategory}>
+        <Select
+          onValueChange={setSelectedCategory}
+          defaultValue={selectedCategory}
+        >
           <SelectTrigger className="w-full">
             <SelectValue placeholder="Select a service" />
           </SelectTrigger>
@@ -170,7 +175,10 @@ export default function PricingComponent() {
       </div>
 
       {categories.map((category) => (
-        <div key={category.name} className={selectedCategory === category.name ? "block" : "hidden"}>
+        <div
+          key={category.name}
+          className={selectedCategory === category.name ? "block" : "hidden"}
+        >
           <div className="text-center mb-8">
             <h3 className="text-2xl font-semibold mb-2">{category.name}</h3>
             <p className="text-lg mb-4">{category.intro}</p>
@@ -214,6 +222,5 @@ export default function PricingComponent() {
         </div>
       ))}
     </div>
-  )
+  );
 }
-

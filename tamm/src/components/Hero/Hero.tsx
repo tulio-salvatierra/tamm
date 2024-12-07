@@ -29,7 +29,10 @@ function Hero() {
               Start fresh in your new place or revitalize your current home with
               our professional cleaning solutions—designed to fit Chicago’s busy
               lifestyle and backed by a team you can{" "}
-              <a className="text-mainBlue text-bold leading-none tracking-tighter underline">
+              <a
+                href="/#why"
+                className="text-mainBlue text-bold leading-none tracking-tighter underline"
+              >
                 RELY
               </a>{" "}
               on.

@@ -8,7 +8,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/callButton";
 import {
   Card,
   CardContent,
@@ -24,7 +24,7 @@ export default function Pricing() {
   const [selectedCategory, setSelectedCategory] = useState(categories[0].name);
 
   return (
-    <div className="container mx-auto px-4 py-16">
+    <section id="pricing" className="container mx-auto px-4 py-16">
       <h2 className="text-[2rem] text-mainBlue font-ultrablack tracking-tighter sm:text-8xl mb-4">
         Our Cleaning Services
       </h2>
@@ -118,6 +118,6 @@ export default function Pricing() {
           </div>
         </div>
       ))}
-    </div>
+    </section>
   );
 }
