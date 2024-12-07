@@ -18,11 +18,11 @@ module.exports = {
     },
     extend: {
       fontSize: {
-        h1: ["3rem"],
-        h2: ["2.5rem"],
-        h3: ["2rem"],
-        body: ["1rem"],
-        accent: ["1.75rem"],
+        h1: ["3rem", { lineHeight: "1.2", fontWeight: "700" }],
+        h2: ["2.5rem", { lineHeight: "1.3", fontWeight: "600" }],
+        h3: ["2rem", { lineHeight: "1.4", fontWeight: "500" }],
+        body: ["1rem", { lineHeight: "1.5" }],
+        accent: ["1.75rem", { lineHeight: "1.4", fontWeight: "500" }],
       },
       colors: {
         transparent: "transparent",

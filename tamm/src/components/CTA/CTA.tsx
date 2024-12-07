@@ -1,5 +1,5 @@
 import { useState } from "react";
-import CTAimage from "./../../assets/tuliosal_an_attractive_cleaner_waiting_for_a_customers_reply_in_32061b94-cecf-4898-90e5-860a11a6b63d.png";
+import CTAimage from "./../../assets/cta.jpeg";
 
 export default function CTA() {
   const [email, setEmail] = useState("");
@@ -46,7 +46,7 @@ export default function CTA() {
         <h2 className="text-4xl text-h1 leading-none bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter">
           Get Chicago’s Best Home Cleaning Offers
         </h2>
-        <p className="p-4 bg-transparent text-h2 text-slate-400 max-w-[900px] md:text-lg lg:text-lg xl:text-lg">
+        <p className="p-4 bg-transparent text-body text-slate-400 max-w-[900px] md:text-lg lg:text-lg xl:text-lg">
           Subscribe to our newsletter and be the first to know about exclusive
           deals on house cleaning service in Chicago, maid service in Chicago,
           residential cleaning Chicago, deep cleaning services Chicago, and

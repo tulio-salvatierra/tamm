@@ -22,10 +22,10 @@ function Hero() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6 px-4 md:px-6 text-left z-10">
-            <h1 className="text-h1 leading-none bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter sm:text-8xl p-4">
-              Move-In & Home Cleaning Services in Chicago You Can Trust
+            <h1 className="text-h2 leading-none bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter sm:text-8xl p-4">
+              Move-In & Home Cleaning Services in Chicago
             </h1>
-            <p className="p-4 bg-transparent text-h2 text-slate-400 max-w-[900px] md:text-lg lg:text-lg xl:text-lg">
+            <p className="p-4 bg-transparent text-body text-slate-400 max-w-[900px] md:text-lg lg:text-lg xl:text-lg">
               Start fresh in your new place or revitalize your current home with
               our professional cleaning solutions—designed to fit Chicago’s busy
               lifestyle and backed by a team you can{" "}
