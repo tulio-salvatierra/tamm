@@ -1,5 +1,5 @@
 import { useRef, FormEvent, useState } from "react";
-import { Button } from "@/components/ui/callButton";
+import { Button } from "@/components/ui/button";
 import emailjs from "@emailjs/browser";
 
 export function ContactForm() {

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Check } from "lucide-react";
 
-import { Button } from "@/components/ui/callButton";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,

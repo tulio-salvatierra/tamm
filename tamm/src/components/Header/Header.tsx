@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button } from "../ui/callButton";
+import { Button } from "../ui/button";
 import Logo from "./../../assets/TAMM_logo.svg";
 import Broom from "./../../assets/broom.svg";
 import HeroSVG from "./../../assets/hero.svg";
