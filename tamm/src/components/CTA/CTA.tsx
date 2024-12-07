@@ -64,7 +64,7 @@ export default function CTA() {
           />
           <button
             type="submit"
-            className="bg-white inline-flex h-12 items-center justify-center ml-auto mr-auto rounded-md transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-150  duration-100 px-6 text-xl font-medium text-mainBlue  focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-1/4"
+            className="bg-white inline-flex h-12 items-center justify-center ml-auto mr-auto rounded-md transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-150  duration-100 px-6 text-xl font-medium text-mainBlue  focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-1/2"
           >
             Subscribe
           </button>

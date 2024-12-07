@@ -1,5 +1,4 @@
 import yellow from "./../../assets/clean-home.png";
-import { Button } from "./../ui/button";
 import HeroSvg from "./../../assets/hero.svg";
 
 function Hero() {
@@ -33,12 +32,13 @@ function Hero() {
               </a>
               <br />
               <br />
-              <Button
-                className="text-mainBlue tracking-tighter  text-2xl p-6 rounded-lg mt-4 w-full hover:bg-lightBlue"
+              <a
+                href="tel:+17739199161"
+                className="p-4 bg-lightGreen text-mainBlue text-lg  justify-self-end self-center ml-auto mx-20 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-100 hover:bg-indigo-100 duration-100 rounded-2xl"
                 onClick={scrollToForm}
               >
                 Book now!
-              </Button>
+              </a>
             </p>
           </div>
 
