@@ -21,6 +21,8 @@ export default function ErrorPage() {
           Chicago, maid service in Chicago, residential cleaning Chicago, deep
           cleaning services Chicago, apartment cleaning Chicago
         </title>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
           content="Oops! The page you're looking for isn't available. Return to Tamm Cleaning Services to explore house cleaning, maid services, and more. Keywords: house cleaning service Chicago, maid service in Chicago, residential cleaning Chicago, deep cleaning services Chicago, apartment cleaning Chicago."

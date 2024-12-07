@@ -25,14 +25,14 @@ function About() {
             <div className="grid grid-cols-2 gap-4 text-left">
               {servicesData.map((service, index) => (
                 <div
-                  className="space-y-2 bg-gradient-to-tr from-lime-300 to-emerald-400 text-white p-4 rounded-lg"
+                  className="space-y-2 bg-muted p-2 border-x-rose-950 rounded-lg"
                   key={`${1 + index}`}
                 >
                   <img src={Check} alt="about-icon" />
                   <h1 className="text-2xl flex font-medium font-ultrablack text-mainBlue">
                     {service.title}
                   </h1>
-                  <p className="text-slate-500 text-body list-none text-left pl-4">
+                  <p className="text-slate-500 text-body list-none text-left mt-2">
                     {service.description}
                   </p>
                 </div>

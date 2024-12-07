@@ -14,6 +14,8 @@ export default function ServicesPage() {
           Chicago, maid service in Chicago, residential cleaning Chicago, deep
           cleaning services Chicago, apartment cleaning Chicago
         </title>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
           content="Discover our full range of cleaning solutions, including home cleaning, move-in services, and specialty deep cleaning options. Keywords: house cleaning service Chicago, maid service in Chicago, residential cleaning Chicago, deep cleaning services Chicago, apartment cleaning Chicago."

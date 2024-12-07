@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 
 type SEOMetaTagsProps = {
   title: string;
+  charset: string;
   description: string;
   canonicalUrl?: string;
   ogImage?: string;

@@ -25,6 +25,8 @@ export default function HomePage() {
           name="description"
           content="Experience top-quality home cleaning and move-in services in Chicago. Our professional team ensures a sparkling, welcoming space tailored to your needs. Keywords: house cleaning service Chicago, maid service in Chicago, residential cleaning Chicago, deep cleaning services Chicago, apartment cleaning Chicago."
         />
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           property="og:title"
           content="Tamm Cleaning Services | Move-In & Home Cleaning in Chicago | house cleaning service Chicago, maid service in Chicago, residential cleaning Chicago, deep cleaning services Chicago, apartment cleaning Chicago"

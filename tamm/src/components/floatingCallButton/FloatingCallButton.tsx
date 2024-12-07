@@ -12,7 +12,7 @@ export default function FloatingCallButton() {
     const config = { strength: 1 };
 
     // Set initial position and xPercent
-    gsap.set(buttonRef.current, { xPercent: -50, x: -1 });
+    gsap.set(buttonRef.current, { xPercent: -20, x: -1 });
 
     // Tween animation
     gsap.to(buttonRef.current, {
