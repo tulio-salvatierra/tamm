@@ -9,6 +9,7 @@ import CTA from "@/components/CTA";
 import AboutSVG from "./../assets/about.svg";
 import FloatingCallButton from "@/components/floatingCallButton";
 import FloatingBookNowButton from "@/components/floatingBookNowButton";
+import Pricing from "@/components/Pricing";
 
 export default function HomePage() {
   return (
@@ -46,6 +47,7 @@ export default function HomePage() {
         }}
       >
         <About />
+        <Pricing />
         <Why />
         <Contact />
       </div>
