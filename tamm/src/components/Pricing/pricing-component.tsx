@@ -103,7 +103,12 @@ export default function Pricing() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <Button className="w-full">
+                  <Button
+                    className="w-full"
+                    onClick={() => {
+                      window.location.href = "tel:7739199161";
+                    }}
+                  >
                     {plan.price === "Custom Quote" ? "Get Quote" : "Book Now"}
                   </Button>
                 </CardFooter>
