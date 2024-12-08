@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Services from "@/components/Services";
 import FloatingCallButton from "@/components/floatingCallButton";
 import FloatingBookNowButton from "@/components/floatingBookNowButton";
+import Pricing from "@/components/Pricing";
 
 export default function ServicesPage() {
   return (
@@ -31,6 +32,7 @@ export default function ServicesPage() {
       </Helmet>
       <Header />
       <Services />
+      <Pricing />
       <FloatingCallButton />
       <FloatingBookNowButton />
       <Footer />

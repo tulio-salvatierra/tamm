@@ -30,7 +30,7 @@ export default function Pricing() {
       </h2>
 
       {/* Mobile Select */}
-      <div className="md:hidden mb-8 mt-8 flex content-center">
+      <div className="md:hidden mb-8 mt-4 content-center">
         <Select
           onValueChange={setSelectedCategory}
           defaultValue={selectedCategory}
@@ -49,13 +49,13 @@ export default function Pricing() {
       </div>
 
       {/* Desktop Tabs */}
-      <div className="hidden md:flex mb-8 space-x-2 overflow-x-auto">
+      <div className="hidden md:flex mb-8 justify-center space-x-2 overflow-x-auto">
         {categories.map((category) => (
           <Button
             key={category.name}
             variant={selectedCategory === category.name ? "default" : "outline"}
             onClick={() => setSelectedCategory(category.name)}
-            className="whitespace-nowrap"
+            className="whitespace-nowrap text-body text-mainBlue"
           >
             {category.name}
           </Button>
