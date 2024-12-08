@@ -31,6 +31,10 @@ export default function ServicesPage() {
         />
       </Helmet>
       <Header />
+
+      <h1 className="p-4 text-h2 bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter sm:text-8xl w-100 h-25">
+        Residential, Commercial and recurring Services in Chicago
+      </h1>
       <Services />
       <Pricing />
       <FloatingCallButton />
