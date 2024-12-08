@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/services",
+    path: "/house-cleaning-services-chicago",
     element: <Services />,
     errorElement: <ErrorPage />,
   },

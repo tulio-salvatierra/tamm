@@ -39,7 +39,7 @@ function Header() {
             Home
           </a>
           <a
-            href="/services"
+            href="/house-cleaning-services-chicago"
             className="mr-3 justify-center text-mainBlue relative text-2xl block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
           >
             Services
@@ -92,7 +92,7 @@ function Header() {
             </a>
             <a
               onClick={toggleMenu}
-              href="/services"
+              href="/services/house-cleaning-services-chicago"
               className="justify-center text-mainBlue relative text-2xl block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
             >
               Services
