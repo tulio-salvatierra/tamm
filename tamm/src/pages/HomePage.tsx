@@ -6,6 +6,7 @@ import About from "@/components/About";
 import Why from "@/components/Why";
 import Contact from "@/components/Contact";
 import CTA from "@/components/CTA";
+import FAQ from "@/components/FAQ";
 import AboutSVG from "./../assets/about.svg";
 import FloatingCallButton from "@/components/floatingCallButton";
 import FloatingBookNowButton from "@/components/floatingBookNowButton";
@@ -50,7 +51,9 @@ export default function HomePage() {
       >
         <About />
         <Pricing />
+
         <Why />
+        <FAQ />
         <Contact />
       </div>
       <FloatingCallButton />

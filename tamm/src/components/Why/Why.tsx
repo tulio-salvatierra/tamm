@@ -5,7 +5,7 @@ import Hanger from "./../../assets/hanger.svg";
 function Why() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32" id="why">
-      <div className="container px-4 md:px-6">
+      <div className="container px-2 md:px-2">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h1 className="p-4 text-h2 bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter sm:text-8xl">
@@ -14,7 +14,7 @@ function Why() {
             <a className="text-lightGreen  text-[4rem]" href="/#pricing">
               Simple!
             </a>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <p className="max-w-[900px] text-left text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               We are committed to providing the highest quality cleaning
               services with unparalleled customer satisfaction.
             </p>
