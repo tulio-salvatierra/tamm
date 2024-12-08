@@ -30,6 +30,7 @@ export default function Services() {
               key={index}
               className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-gray-100/50 p-4 rounded-2xl my-6 h-3/4"
               style={{
+                backgroundImage: background ? `url(${background})` : "none",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
