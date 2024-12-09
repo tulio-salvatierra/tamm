@@ -1,6 +1,6 @@
-import Main from "./../../assets/services/services.png";
-import Residential from "./../../assets/services/residential.png";
-import Commercial from "./../../assets/services/commercial.png";
+import Main from "./../../assets/services/services.jpeg";
+import Residential from "./../../assets/services/residential.jpeg";
+import Commercial from "./../../assets/services/commercial.jpeg";
 import AboutSVG from "./../../assets/about.svg";
 
 export const servicesData = [
