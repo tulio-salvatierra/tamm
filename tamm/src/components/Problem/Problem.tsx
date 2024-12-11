@@ -8,7 +8,7 @@ export default function Problem() {
       <div className="container px-4 md:px-6">
         <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
           <div className="space-y-4">
-            <div className="inline-block text-h1 rounded-lg bg-muted px-3 py-1 text-mainBlue font-black p-5">
+            <div className="inline-block text-h1 rounded-lg bg-muted pb-10 py-1leading-none bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter">
               Let’s face it:
             </div>
             <h2 className="text-body text-mainBlue font-ultrablack sm:text-4xl">
