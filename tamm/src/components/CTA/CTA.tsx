@@ -47,12 +47,10 @@ export default function CTA() {
         <h2 className="text-4xl text-h1 leading-none bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter">
           Get Chicago’s Best Home Cleaning Offers
         </h2>
-        <p className="mt-4 bg-transparent text-body text-slate-400 max-w-[900px] md:text-lg lg:text-lg xl:text-lg">
+        <p className="mt-4 w-75 bg-transparent text-body text-slate-400 max-w-[900px] md:text-lg lg:text-lg xl:text-lg">
           Subscribe to our newsletter and be the first to know about exclusive
-          deals on house cleaning service in Chicago, maid service in Chicago,
-          residential cleaning Chicago, deep cleaning services Chicago, and
-          apartment cleaning Chicago. Stay ahead with the latest promotions and
-          transform your home into a spotless, inviting space.
+          deals on house cleaning service, maid service, residential cleaning,
+          deep cleaning and apartment cleaning Chicago.
         </p>
         <form
           className="mt-10 grid flex-col items-center gap-4"
