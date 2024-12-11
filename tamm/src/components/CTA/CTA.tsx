@@ -44,7 +44,7 @@ export default function CTA() {
   return (
     <section className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-gradient-to-tr from-lime-100 to-emerald-100 h-3/4 p-8">
       <div className="container mx-auto px-4 md:px-6 text-left place-content-center">
-        <h2 className="text-4xl text-h1 leading-none bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter">
+        <h2 className="text-4xl text-h1 leading-none bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter mb-10">
           Get Chicago’s Best Home Cleaning Offers
         </h2>
         <p className="mt-4 w-75 bg-transparent text-body text-slate-400 max-w-[900px] md:text-lg lg:text-lg xl:text-lg">

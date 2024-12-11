@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
-import About from "@/components/About";
+import Problem from "@/components/Problem";
 import Why from "@/components/Why";
 import Contact from "@/components/Contact";
 import CTA from "@/components/CTA";
@@ -40,6 +40,7 @@ export default function HomePage() {
 
       <Header />
       <Hero />
+      <Problem />
 
       <CTA />
       <div
@@ -49,7 +50,6 @@ export default function HomePage() {
           backgroundPosition: "center",
         }}
       >
-        <About />
         <Pricing />
         <Why />
         <FAQ />
