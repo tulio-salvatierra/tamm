@@ -5,12 +5,11 @@ import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
 import Why from "@/components/Why";
 import Contact from "@/components/Contact";
-import CTA from "@/components/CTA";
-import FAQ from "@/components/FAQ";
 import AboutSVG from "./../assets/about.svg";
 import FloatingCallButton from "@/components/floatingCallButton";
 import FloatingBookNowButton from "@/components/floatingBookNowButton";
 import Pricing from "@/components/Pricing";
+import TAMMCleaningIntro from "@/components/Intro";
 
 export default function HomePage() {
   return (
@@ -40,9 +39,7 @@ export default function HomePage() {
 
       <Header />
       <Hero />
-      <Problem />
 
-      <CTA />
       <div
         style={{
           backgroundImage: `url(${AboutSVG})`,
@@ -50,9 +47,11 @@ export default function HomePage() {
           backgroundPosition: "center",
         }}
       >
+        <Problem />
+        <TAMMCleaningIntro />
         <Pricing />
         <Why />
-        <FAQ />
+
         <Contact />
       </div>
       <FloatingCallButton />

@@ -41,7 +41,7 @@ export default function FloatingCallButton() {
       <a
         href="tel:+17739199161"
         aria-label="Call us now at +1 (773) 919-9161"
-        className="w-[135px] flex items-center p-4 bg-mainBlue text-lightGreen text-xs rounded-full  transition-transform transform hover:scale-105 shadow-md shadow-green-500/20  hover:shadow-lg hover:shadow-green-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+        className="w-[135px] font-second flex items-center p-4 bg-mainBlue text-lightGreen text-xs rounded-full  transition-transform transform hover:scale-105 shadow-md shadow-green-500/20  hover:shadow-lg hover:shadow-green-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
       >
         <img src={Phone} alt="Phone icon" className="mr-2 w-5 h-5" />
         Call now

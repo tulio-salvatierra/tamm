@@ -126,7 +126,7 @@ function Header() {
               <a href="#" className="flex items-center gap-2">
                 <img src={Logo} alt="Sparkling Clean" className="w-50 h-auto" />
               </a>
-              <p className="text-muted-foreground text-left max-w-md">
+              <p className="text-muted-foreground text-left max-w-md font-second">
                 a family-owned cleaning company based in Chicago, offering
                 reliable and eco-friendly cleaning solutions for homes, offices,
                 and commercial spaces.

@@ -25,7 +25,7 @@ export default function Pricing() {
 
   return (
     <div id="pricing" className="container mx-auto px-4 py-16">
-      <h2 className="text-[2rem] text-mainBlue font-ultrablack tracking-tighter sm:text-8xl mb-20">
+      <h2 className="text-h2 text-center leading-none bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter sm:text-8xl p-4 mb-10 font-main">
         Our Cleaning Services
       </h2>
 
@@ -68,11 +68,13 @@ export default function Pricing() {
           className={selectedCategory === category.name ? "block" : "hidden"}
         >
           <div className="text-center mb-8">
-            <h3 className="text-h2 text-mainBlue font-ultrablack tracking-tighter ">
+            <h3 className="text-h3 mb-10 text-mainBlue font-ultrablack tracking-tighter ">
               {category.name}
             </h3>
-            <p className="text-body  text-left mb-4 w-75">{category.intro}</p>
-            <p className="text-body  text-left mb-4 w-75">
+            <p className="text-body font-second font-muted text-cyan-900  text-left mb-4 w-75">
+              {category.intro}
+            </p>
+            <p className="text-body font-second font-muted text-cyan-900  text-left mb-4 w-75">
               {category.description}
             </p>
           </div>
@@ -83,11 +85,11 @@ export default function Pricing() {
                 className="flex flex-col bg-transparent shadow-2xl"
               >
                 <CardHeader>
-                  <CardTitle className="text-2xl text-[2rem] text-mainBlue font-ultrablack tracking-tighter">
+                  <CardTitle className="text-2xl text-[2rem] text-mainBlue font-ultrablack tracking-tighter font-second font-extralight">
                     {plan.name}
                   </CardTitle>
                   <CardDescription>
-                    <span className="text-h3 leading-none bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter text-3xl font-bold">
+                    <span className="leading-none bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter text-xl font-extralight">
                       {plan.price}
                     </span>
                   </CardDescription>
@@ -95,7 +97,10 @@ export default function Pricing() {
                 <CardContent className="flex-grow">
                   <ul className="space-y-2">
                     {plan.features.map((feature) => (
-                      <li key={feature} className="flex items-center text-body">
+                      <li
+                        key={feature}
+                        className="flex items-center text-body font-second"
+                      >
                         <Check className="mr-2 h-4 w-4 text-green-500" />
                         <span>{feature}</span>
                       </li>
@@ -117,7 +122,7 @@ export default function Pricing() {
           </div>
           <div className="bg-muted p-4 rounded-lg">
             <h4 className="font-semibold mb-2">Notes:</h4>
-            <ul className="list-disc list-inside">
+            <ul className="list-disc list-inside text-cyan-900 font-second">
               {category.notes.map((note, index) => (
                 <li key={index}>{note}</li>
               ))}
