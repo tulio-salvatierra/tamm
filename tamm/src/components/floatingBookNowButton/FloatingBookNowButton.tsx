@@ -40,11 +40,11 @@ export default function FloatingCallButton() {
       <a
         href="https://app.squareup.com/appointments/book/1r0stwdix9bhap/LSC34DPQB3S6R/start"
         aria-label="Booking app button"
-        className="w-[135px] flex items-center p-4 bg-lightGreen text-white text-lg rounded-full  transition-transform transform hover:scale-105 shadow-md shadow-green-500/20  hover:shadow-lg hover:shadow-green-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+        className="w-[135px] flex items-center p-4 bg-lightGreen text-white text-xs rounded-full  transition-transform transform hover:scale-105 shadow-md shadow-green-500/20  hover:shadow-lg hover:shadow-green-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
       >
         <img
-          width="24"
-          height="24"
+          width="20"
+          height="20"
           src="https://img.icons8.com/material-outlined/24/event-accepted.png"
           alt="event-accepted"
         />
