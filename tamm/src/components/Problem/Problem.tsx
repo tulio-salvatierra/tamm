@@ -6,7 +6,7 @@ export default function Problem() {
   return (
     <section
       id="about"
-      className="w-full h-5/6 py-50 my-30 md:py-24 lg:py-40 bg-slate-300"
+      className="w-full h-5/6 py-10 my-30 md:py-24 lg:py-40 bg-slate-300"
     >
       <div className="container px-4 md:px-6">
         <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
