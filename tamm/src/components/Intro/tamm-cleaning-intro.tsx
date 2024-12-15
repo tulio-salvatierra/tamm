@@ -18,7 +18,7 @@ export default function TAMMCleaningIntro() {
           <h2 className="p-4 text-h2 bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter sm:text-8xl">
             TAMM Cleaning Services: Your Solution to a Spotless Space
           </h2>
-          <p className="mt-4 text-xl text-gray-600 font-second">
+          <p className="mt-4 text-xl text-cyan-900 font-second font-black">
             Experience the difference with our professional, reliable, and
             eco-friendly cleaning services.
           </p>
@@ -29,7 +29,7 @@ export default function TAMMCleaningIntro() {
             <CardHeader>
               <CardTitle className="flex items-center">
                 <CheckCircle className="w-6 h-6 text-green-500 mr-2" />
-                Professional Excellence
+                <a className="text-mainBlue">Professional Excellence</a>
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -44,7 +44,7 @@ export default function TAMMCleaningIntro() {
             <CardHeader>
               <CardTitle className="flex items-center">
                 <Clock className="w-6 h-6 text-blue-500 mr-2" />
-                Flexible Scheduling
+                <a className="text-mainBlue">Flexible Scheduling</a>
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -59,7 +59,7 @@ export default function TAMMCleaningIntro() {
             <CardHeader>
               <CardTitle className="flex items-center">
                 <Sparkles className="w-6 h-6 text-purple-500 mr-2" />
-                Eco-Friendly Products
+                <a className="text-mainBlue"> Eco-Friendly Products</a>
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -74,8 +74,8 @@ export default function TAMMCleaningIntro() {
         <div className="mt-16">
           <Card className="bg-white text-cyan-900">
             <CardHeader>
-              <CardTitle className="text-2xl ">
-                Why Choose TAMM Cleaning?
+              <CardTitle className="text-2xl  ">
+                <a className="text-mainBlue">Why Choose TAMM Cleaning?</a>
               </CardTitle>
               <CardDescription className="text-cyan-900 font-second">
                 We're more than just a cleaning service - we're your partner in

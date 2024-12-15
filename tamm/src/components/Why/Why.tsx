@@ -18,8 +18,11 @@ function Why() {
           </div>
           <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 sm:grid-cols-1 lg:grid-cols-3 lg:gap-12">
             {cardData.map((card, index) => (
-              <div key={index} className="grid gap-1 bg-muted p-4 rounded-xl">
-                <div className="flex flex-col items-center gap-2">
+              <div
+                key={index}
+                className="grid gap-1 bg-muted p-4 rounded-xl h-[420px]"
+              >
+                <div className="flex flex-col items-center gap-2 justify-between">
                   <img src={card.image} className="h-[4rem]" alt={card.title} />
                   <h3 className="text-lg font-bold bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack">
                     {card.title}

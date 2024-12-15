@@ -14,7 +14,7 @@ export default function Problem() {
             <div className="inline-block text-h1 rounded-lg bg-muted pb-10 py-1leading-none bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter">
               Let’s face it:
             </div>
-            <h2 className="text-xl font-second text-mainBlue font-ultrablack bg-muted p-8 rounded-xl leading-tight line">
+            <h2 className="text-xl font-second text-mainBlue font-black bg-muted p-8 rounded-xl leading-tight line">
               Trying to maintain a tidy, comfortable home is harder than it
               should be. Instead of unwinding in a clean, welcoming space,
               you’re stuck facing clutter, dust and an endless chore list.
