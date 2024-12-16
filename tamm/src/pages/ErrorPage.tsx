@@ -39,7 +39,7 @@ export default function ErrorPage() {
       <Header />
       <section
         id="error-page"
-        className="h-full"
+        className="h-dvh flex-col"
         style={{
           backgroundImage: `url(${HeroSVG})`,
           backgroundSize: "cover",
@@ -47,24 +47,26 @@ export default function ErrorPage() {
           zIndex: -100,
         }}
       >
-        <div className="container p-72 flex-col">
-          <h1 className="text-[3rem] leading-none bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter sm:text-8xl p-4">
+        <div className="flex-col  align-middle justify-items-center ml-auto mr-auto  mt-60 w-2/3 align-center bg-muted rounded-2xl">
+          <h1 className="text-[3rem] leading-none bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter sm:text-8xl p-4 margin-auto">
             Oops!
           </h1>
-          <p className="p-4 bg-transparent text-4xl text-slate-400 max-w-[900px] md:text-lg lg:text-lg xl:text-lg ">
+          <p className="p-4 bg-transparent text-4xl text-cyan-900 max-w-[900px] md:text-lg lg:text-lg xl:text-lg ">
             Sorry, an unexpected error has occurred.
           </p>
           <p>
-            <i className="p-4 bg-transparent text-4xl text-slate-400 max-w-[900px] md:text-lg lg:text-lg xl:text-lg ">
+            <i className="p-4 bg-transparent text-4xl text-cyan-400 max-w-[900px] md:text-lg lg:text-lg xl:text-lg ">
               {error.statusText || error.message}
             </i>
           </p>
-          <a
-            href="/"
-            className="p-4 bg-lightGreen text-mainBlue text-lg  justify-self-end self-center ml-auto mx-20 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-100 hover:bg-indigo-100 duration-100 rounded-xl mt-5"
-          >
-            Back to home
-          </a>
+          <div className="flex-col justify-evenly mt-10">
+            <a
+              href="/"
+              className="p-4 bg-lightGreen font-second text-mainBlue text-lg rounded-xl"
+            >
+              Back to home
+            </a>
+          </div>
         </div>
       </section>
       <Footer />
