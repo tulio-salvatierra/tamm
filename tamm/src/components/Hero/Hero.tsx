@@ -18,7 +18,7 @@ function Hero() {
           {/* Left Content */}
           <div className="space-y-6 px-4 md:px-6 text-left z-10">
             <h1 className="text-h2 leading-none bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter sm:text-8xl p-4 font-main">
-              Experience stress-free living through our maid service in Chicago
+              Experience stress-free living in a sparkling and fresh space
             </h1>
             <p className="p-4 font-second bg-transparent text-cyan-900 text-h4 mb-40 max-w-[900px] md:text-lg lg:text-lg xl:text-lg">
               We provide tailored cleaning solutions designed to match your

@@ -1,20 +1,13 @@
 import { useState } from "react";
 import { Button } from "../ui/button";
+import { MENU_ITEM } from "@/constants/constants";
 import Logo from "./../../assets/TAMM_logo.svg";
 import Broom from "./../../assets/broom.svg";
 import HeroSVG from "./../../assets/hero.svg";
 
-function Header() {
+export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
   const toggleMenu = () => setShowMenu(!showMenu);
-
-  const scrollToFormHeader = () => {
-    const formSection = document.getElementById("contact");
-    if (formSection) {
-      formSection.scrollIntoView({ behavior: "smooth" });
-    }
-    setShowMenu(false);
-  };
 
   return (
     <header className="bg-white p-4 flex justify-between text-mainBlue">
@@ -25,34 +18,14 @@ function Header() {
       <div className="flex w-auto ml-auto justify-end">
         {/* Desktop Menu */}
         <nav className="hidden md:flex p-4 text-right justify-end items-center">
-          <a
-            href="/"
-            className="mr-4 justify-center text-mainBlue relative text-2xl block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-          >
-            Home
-          </a>
-          <a
-            href="/house-cleaning-services-chicago"
-            className="mr-4 justify-center text-mainBlue relative text-2xl block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-          >
-            Services
-          </a>
-          <a
-            href="#about"
-            className="mr-4 justify-center text-mainBlue relative text-2xl block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-          >
-            About
-          </a>
-          <a
-            href="#contact"
-            className="mr-5 justify-center text-mainBlue relative text-2xl block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-          >
-            Contact
-          </a>
+          {MENU_ITEM.map((nav, index) => (
+            <a href={nav.url} key={index} className={nav.class}>
+              {nav.name}
+            </a>
+          ))}
           <a
             href="tel:+17739199161"
             className="p-4 bg-lightGreen text-mainBlue text-lg  justify-self-end self-center ml-10 mx-20 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-100 hover:bg-indigo-100 duration-100 rounded-2xl"
-            onClick={scrollToFormHeader}
           >
             Book now!
           </a>
@@ -76,41 +49,25 @@ function Header() {
             height: "100%",
           }}
         >
-          <div className="content-top text-center gap-6">
+          <div className="content-top text-left gap-3">
             <Button
               className="p-4 bg-lightGreen text-mainBlue text-lg  mb-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-400 duration-300 tracking-tighter"
-              onClick={scrollToFormHeader}
+              href="tel:+17739199161"
             >
               Book now!
             </Button>
-            <a
-              onClick={toggleMenu}
-              href="/"
-              className="justify-center text-mainBlue relative text-2xl block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-            >
-              Home
-            </a>
-            <a
-              onClick={toggleMenu}
-              href="/services/house-cleaning-services-chicago"
-              className="justify-center text-mainBlue relative text-2xl block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-            >
-              Services
-            </a>
-            <a
-              onClick={toggleMenu}
-              href="#about"
-              className="justify-center text-mainBlue relative text-2xl block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-            >
-              About
-            </a>
-            <a
-              onClick={toggleMenu}
-              href="#contact"
-              className="justify-center text-mainBlue relative text-2xl block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-            >
-              Contact
-            </a>
+            <nav className=" xs:flex sm:flex p-4 text-right justify-end items-center">
+              {MENU_ITEM.map((navMobile, index) => (
+                <a
+                  href={navMobile.url}
+                  key={index}
+                  className={navMobile.class}
+                  onClick={toggleMenu}
+                >
+                  {navMobile.name}
+                </a>
+              ))}
+            </nav>
             <button
               className="text-mainBlue text-xl  mt-4"
               onClick={toggleMenu}
@@ -138,5 +95,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;
