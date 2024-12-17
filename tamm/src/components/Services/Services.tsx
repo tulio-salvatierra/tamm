@@ -32,7 +32,7 @@ export default function Services() {
             >
               <div className="text-left place-content-center">
                 <h1 className="text-mainBlue text-6xl mb-6">{title}</h1>
-                <p className="text-slate-500 md:text-2xl lg:text-2xl rounded-2xl sm:w-3/4">
+                <p className="text-slate-500 font-second md:text-2xl lg:text-2xl rounded-2xl sm:w-3/4">
                   {description}
                 </p>
               </div>
@@ -69,7 +69,7 @@ export default function Services() {
               )}
               <div className="text-left place-content-center">
                 <h1 className="text-mainBlue text-6xl mb-6">{title}</h1>
-                <p className="text-slate-500 md:text-2xl lg:text-2xl">
+                <p className="text-slate-500 font-second md:text-2xl lg:text-2xl">
                   {description}
                 </p>
                 {items && (
@@ -106,7 +106,7 @@ export default function Services() {
               )}
               <div className="text-left place-content-center">
                 <h1 className="text-mainBlue text-6xl mb-6">{title}</h1>
-                <p className="text-slate-500 md:text-2xl lg:text-2xl">
+                <p className="text-slate-500 font-second md:text-2xl lg:text-2xl">
                   {description}
                 </p>
                 {items && (
