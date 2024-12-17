@@ -1,4 +1,5 @@
 import AboutSVG from "./../../assets/about.svg";
+import { PHONE } from "./../../constants/constants";
 import { servicesData } from "./servicesData";
 import { ContactForm } from "@/components/ui/contact-form";
 
@@ -18,31 +19,25 @@ export default function Services() {
           title,
           description,
           image,
-          background,
           items,
           showContactForm,
         } = section;
 
-        // Common styles and structures based on sectionType:
+        // Intro Section
         if (sectionType === "intro") {
           return (
             <section
               key={index}
-              className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-gray-100/50 p-4 rounded-2xl my-6 h-3/4"
-              style={{
-                backgroundImage: background ? `url(${background})` : "none",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
+              className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-gray-100/50 p-4 rounded-2xl my-32 h-3/4"
             >
               <div className="text-left place-content-center">
                 <h1 className="text-mainBlue text-6xl mb-6">{title}</h1>
-                <p className="w-100 text-slate-500 text-left md:text-2xl lg:text-2xl xl:text-2xl rounded-2xl sm:w-3/4 border-teal-100">
+                <p className="text-slate-500 md:text-2xl lg:text-2xl rounded-2xl sm:w-3/4">
                   {description}
                 </p>
               </div>
               {image && (
-                <div className="image">
+                <div>
                   <img
                     src={image}
                     alt="services-main"
@@ -50,103 +45,148 @@ export default function Services() {
                   />
                 </div>
               )}
+              <a
+                href={`tel:${PHONE}`}
+                className="p-4 bg-lightGreen text-mainBlue text-lg text-center    transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-100 hover:bg-indigo-100 duration-100 rounded-2xl"
+              >
+                Book now!
+              </a>
             </section>
           );
         }
 
+        // Residential Section
         if (sectionType === "residential") {
           return (
             <section
               key={index}
-              className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-gray-100/50 p-4 rounded-2xl my-5"
+              className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-gray-100/50 p-4 rounded-2xl my-32"
             >
               {image && (
-                <div className="image">
+                <div>
                   <img src={image} alt="residential" className="rounded-2xl" />
                 </div>
               )}
               <div className="text-left place-content-center">
                 <h1 className="text-mainBlue text-6xl mb-6">{title}</h1>
-                <p className="w-100 text-slate-500 bg-opacity-10 text-left md:text-2xl lg:text-2xl xl:text-2xl rounded-2xl sm:w-3/4 border-teal-100">
+                <p className="text-slate-500 md:text-2xl lg:text-2xl">
                   {description}
                 </p>
                 {items && (
-                  <ol className="grid grid-cols-1 gap-4 md:grid-cols-2 text-slate-500 text-xl text-left pl-4 my-4 ml-auto mr-auto">
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-500 text-xl my-4">
                     {items.map((item, i) => (
-                      <li
-                        key={i}
-                        className="bg-gradient-to-tr from-lime-300 to-emerald-400 bg-opacity-70 p-4 rounded-lg"
-                      >
+                      <li key={i} className="bg-green-200 p-4 rounded-lg">
                         {item}
                       </li>
                     ))}
-                  </ol>
+                  </ul>
                 )}
               </div>
+              <a
+                href={`tel:${PHONE}`}
+                className="p-4 bg-lightGreen text-mainBlue text-lg text-center    transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-100 hover:bg-indigo-100 duration-100 rounded-2xl"
+              >
+                Book now!
+              </a>
             </section>
           );
         }
 
+        // Apartment Section
+        if (sectionType === "apartment") {
+          return (
+            <section
+              key={index}
+              className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-gray-100/50 p-4 rounded-2xl my-32"
+            >
+              {image && (
+                <div>
+                  <img src={image} alt="apartment" className="rounded-2xl" />
+                </div>
+              )}
+              <div className="text-left place-content-center">
+                <h1 className="text-mainBlue text-6xl mb-6">{title}</h1>
+                <p className="text-slate-500 md:text-2xl lg:text-2xl">
+                  {description}
+                </p>
+                {items && (
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-500 text-xl my-4">
+                    {items.map((item, i) => (
+                      <li key={i} className="bg-blue-200 p-4 rounded-lg">
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+              <a
+                href={`tel:${PHONE}`}
+                className="p-4 bg-lightGreen text-mainBlue text-lg text-center    transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-100 hover:bg-indigo-100 duration-100 rounded-2xl"
+              >
+                Book now!
+              </a>
+            </section>
+          );
+        }
+
+        // Commercial Section
         if (sectionType === "commercial") {
           return (
             <section
               key={index}
-              className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-gray-100/50 p-4 rounded-2xl my-5"
+              className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-gray-100/50 p-4 rounded-2xl my-32"
             >
               <div className="text-left place-content-center">
                 <h1 className="text-mainBlue text-6xl mb-6">{title}</h1>
-                <p className="w-100 text-slate-500 bg-opacity-10 text-left md:text-2xl lg:text-2xl xl:text-2xl rounded-2xl sm:w-3/4 border-teal-100">
+                <p className="text-slate-500 md:text-2xl lg:text-2xl">
                   {description}
                 </p>
                 {items && (
-                  <ol className="grid grid-cols-1 gap-4 md:grid-cols-2 text-slate-500 text-xl text-left pl-4 my-4 ml-auto mr-auto">
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-500 text-xl my-4">
                     {items.map((item, i) => (
-                      <li
-                        key={i}
-                        className="bg-gradient-to-tr from-lime-300 to-emerald-400 bg-opacity-70 p-4 rounded-lg"
-                      >
+                      <li key={i} className="bg-yellow-200 p-4 rounded-lg">
                         {item}
                       </li>
                     ))}
-                  </ol>
+                  </ul>
                 )}
               </div>
               {image && (
-                <div className="image">
+                <div>
                   <img src={image} alt="commercial" className="rounded-2xl" />
                 </div>
               )}
+              <a
+                href={`tel:${PHONE}`}
+                className="p-4 bg-lightGreen text-mainBlue text-lg text-center    transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-100 hover:bg-indigo-100 duration-100 rounded-2xl"
+              >
+                Book now!
+              </a>
             </section>
           );
         }
 
+        // Why-Choose Section
         if (sectionType === "why-choose") {
           return (
             <div
               key={index}
-              className="text-center bg-green-100/10 rounded-2xl sm:p-20 py-8"
+              className="text-center my-32 bg-green-100/10 rounded-2xl p-8 sm:p-20"
             >
-              <div className="bg-white p-8 rounded-2xl flex flex-col sm:3/4 place-content-center mr-auto ml-auto mt-4 mb-4 shadow-2xl">
-                <h2 className="text-[2rem] bg-gradient-to-b from-cyan-500 to-blue-600 bg-clip-text text-transparent font-ultrablack tracking-tighter sm:text-8xl mb-4">
-                  {title}
-                </h2>
-                {items && (
-                  <ol className="grid grid-cols-1 gap-4 md:grid-cols-2 text-slate-500 text-xl text-left pl-4 my-4 ml-auto mr-auto bg-transparent">
-                    {items.map((item, i) => (
-                      <li
-                        key={i}
-                        className="bg-gradient-to-tr from-lime-300 to-emerald-400 bg-opacity-70 p-4 rounded-lg"
-                      >
-                        {item}
-                      </li>
-                    ))}
-                  </ol>
-                )}
-                <h2 className="text-[3rem] text-mainBlue sm:text-3xl text-center p-4 justify-center mr-auto ml-auto leading-none">
-                  {description}
-                </h2>
-                {showContactForm && <ContactForm />}
-              </div>
+              <h2 className="text-mainBlue text-4xl sm:text-6xl mb-6">
+                {title}
+              </h2>
+              <p className="text-slate-500 text-xl mb-6">{description}</p>
+              {items && (
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-500 text-xl">
+                  {items.map((item, i) => (
+                    <li key={i} className="bg-gray-200 p-4 rounded-lg">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {showContactForm && <ContactForm />}
             </div>
           );
         }
