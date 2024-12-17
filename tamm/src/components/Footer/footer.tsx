@@ -1,4 +1,5 @@
 import Logo from "./../../assets/TAMM_logo.svg";
+import { MENU_ITEM } from "@/constants/constants";
 
 export default function Footer() {
   return (
@@ -15,31 +16,12 @@ export default function Footer() {
           </p>
         </div>
         <div className="grid gap-2 text-center">
-          <h4 className="text-lg font-semibold">Quick Links</h4>
-          <a
-            href="/"
-            className="justify-center text-mainBlue relative text-2xl block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-          >
-            Home
-          </a>
-          <a
-            href="/#about"
-            className="justify-center text-mainBlue relative text-2xl block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-          >
-            About
-          </a>
-          <a
-            href="/services"
-            className="justify-center text-mainBlue relative text-2xl block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-          >
-            Services
-          </a>
-          <a
-            href="/#contact"
-            className="justify-center text-mainBlue relative text-2xl block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightGreen after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-          >
-            Contact
-          </a>
+          <h4 className="text-2xl font-semibold font-cyan-900">Menu</h4>
+          {MENU_ITEM.map((nav, index) => (
+            <a href={nav.url} key={index} className={nav.class}>
+              {nav.name}
+            </a>
+          ))}
         </div>
         <div className="grid gap-2">
           <h4 className="text-lg font-semibold">Contact</h4>
