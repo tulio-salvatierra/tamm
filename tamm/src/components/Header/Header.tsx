@@ -10,7 +10,7 @@ export default function Header() {
   const toggleMenu = () => setShowMenu(!showMenu);
 
   return (
-    <header className="bg-white p-4 flex justify-between text-mainBlue">
+    <header className="bg-white p-4 flex justify-between text-mainBlue sticky top-0 shadow-2xl z-50">
       <a href="/">
         <img src={Logo} className="p-2" alt="TAMM Logo" />
       </a>

@@ -7,6 +7,7 @@ import Services from "./routes/services.tsx";
 import "./index.css";
 
 import Root from "./routes/root.tsx";
+import BlogPage from "./pages/BlogPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,11 @@ const router = createBrowserRouter([
   {
     path: "/house-cleaning-services-chicago",
     element: <Services />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/blog",
+    element: <BlogPage />,
     errorElement: <ErrorPage />,
   },
 ]);
