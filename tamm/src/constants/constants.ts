@@ -6,7 +6,7 @@ export const HOME_URL = "/";
 export const SERICES_URL = "/house-cleaning-services-chicago";
 export const ABOUT_URL = "#about";
 export const CONTACT_URL = "#contact";
-export const BLOG_URL = "/blog";
+export const BLOG_URL = "/blog-deep-cleaning-services-chicago";
 
 export const MENU_ITEM = [
   {

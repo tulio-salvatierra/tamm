@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/blog",
+    path: "/blog-deep-cleaning-services-chicago",
     element: <BlogPage />,
     errorElement: <ErrorPage />,
   },

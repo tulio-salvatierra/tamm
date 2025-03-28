@@ -14,7 +14,7 @@ function App() {
           path="/house-cleaning-services-chicago"
           element={<ServicesPage />}
         />
-        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog-deep-cleaning-services-chicago" element={<BlogPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>
